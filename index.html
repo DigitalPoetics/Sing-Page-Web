@@ -27,9 +27,6 @@
 	 
 	 <!--minimap -->
 	 <script src='https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.minimap.min.js'></script>
-	 
-	 <!-- minimap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.regions.min.js"></script>
 
 	<!-- wavesurfer.js regions -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.regions.min.js"></script>
@@ -51,60 +48,28 @@
 	
 	
 	<script>
-	var wavesurfer = WaveSurfer.create({
-		container: document.querySelector ('#waveform'),
-		progressColor: "black",
-		waveColor: 'blue',
-		backgroundColor: '#fcfcfc',
-		loop: true,
-		scrollParent: true,
-		maxCanvasWidth: 5000,
-		mediaControls: true,		
-		minPxPerSec: 75
-	});		
-	
-	wavesurfer.on('ready', function () {
-		var spectrogram = Object.create(WaveSurfer.Spectrogram);
-		spectrogram.init({
-			wavesurfer: wavesurfer,
-			container: "#wave-spectrogram",
-			labels: true,
-			fftSamples: 512,
-			loop: true
+	var wavesurfer;
+
+	// Init & load
+	document.addEventListener('DOMContentLoaded', function() {
+    	// Create an instance
+    	var options = {
+        	container: '#waveform',
+        	waveColor: 'violet',
+        	progressColor: 'purple',
+        	loaderColor: 'purple',
+        	cursorColor: 'navy',
+        	plugins: [
+            	WaveSurfer.spectrogram.create({
+                	container: '#wave-spectrogram'
+            	})
+        	]
+    	};
+
+    	wavesurfer = WaveSurfer.create(options);
+
+    	wavesurfer.load('creeley.mp3');
 		});
-	});	
-	
-	wavesurfer.on('ready', function () {
-		wavesurfer.addRegion({
-		start: 2,
-		end: 5,
-		color: 'hsla(100, 100%, 30%, 0.1)' 
-		});
-	});
-	
-	wavesurfer.on('ready', function () {
-		var timeline = Object.create(WaveSurfer.Timeline);
-		timeline.init({
-			wavesurfer: wavesurfer,
-			container: "#wave-timeline"
-		});
-	});	
-	
-	wavesurfer.on('ready', function () {
-		var elan = Object.create(WaveSurfer.ELAN);
-		elan.init({
-			wavesurfer: wavesurfer,
-			url: 'creeleyelan.xml',
-			container: "#annotations",
-			tiers: {
-				Text: true,
-				Comments: true
-			}			
-		});
-	});
-	
-	wavesurfer.load('creeley.mp3');
-	
 	</script>
 </article>
 
