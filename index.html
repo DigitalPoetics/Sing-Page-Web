@@ -19,7 +19,7 @@
 	<div id="wave-spectrogram"></div>	
 
 	<!-- main wavesurfer.js lib -->
-	<script src="https://unpkg.com/wavesurfer.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/wavesurfer.min.js"></script>
 	<!-- spectrogram format renderer -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.spectrogram.min.js"></script>
 	 
@@ -58,8 +58,7 @@
 		scrollParent: true,
 		maxCanvasWidth: 5000,
 		mediaControls: true,		
-		minPxPerSec: 75,
-		plugins: [WaveSurfer.minimap.create(pluginOptions)]
+		minPxPerSec: 75
 	});		
 	
 	wavesurfer.on('ready', function () {
