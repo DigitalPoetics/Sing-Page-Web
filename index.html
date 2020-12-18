@@ -68,6 +68,7 @@
 			container: "#wave-spectrogram",
 			labels: true,
 			fftSamples: 512,
+			frequenciesDataUrl: "creeleypitch.txt"
 			loop: true
 		});
 	});	
@@ -89,7 +90,7 @@
 	});	
 	
 	wavesurfer.on('ready', function () {
-		var elan = Object.create(WaveSurfer.ELAN);
+		var elan = Object.create(WaveSurfer.Elan);
 		elan.init({
 			wavesurfer: wavesurfer,
 			url: 'creeleyelan.xml',
@@ -102,9 +103,8 @@
 	});
 	
 	wavesurfer.load('creeley.mp3');
-
-
 	</script>
+
 </article>
 
 
