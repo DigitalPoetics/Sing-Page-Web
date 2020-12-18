@@ -10,11 +10,12 @@
 <article> 	
     <h1>Diagrammatic Readings</h1>
 
-	<div id="wave-spectrogram"></div>
+
 	
 	<!-- Create a div where the audio waves will be shown --> 
+	<div id="wave-spectrogram"></div>
     <div id="waveform"></div>
-	<div id="wave-timeline">WCWsomuch</div>	
+	<div id="wave-timeline"></div>	
 
 	<!-- main wavesurfer.js lib -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/wavesurfer.min.js"></script>
@@ -68,7 +69,7 @@
 
     	wavesurfer = WaveSurfer.create(options);
 
-    	wavesurfer.load('creeley.mp3');
+    	wavesurfer.load('creeley.wav');
 		});
 	</script>
 </article>
