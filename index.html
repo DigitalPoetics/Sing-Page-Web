@@ -91,11 +91,15 @@
 	});	
 	
 	wavesurfer.on('ready', function () {
-		var elan = Object.create(WaveSurfer.Elan);
+		var elan = Object.create(WaveSurfer.ELAN);
 		elan.init({
 			wavesurfer: wavesurfer,
-			container: "#annotations",
 			url: 'creeleyelan.xml',
+			container: "#annotations",
+			tiers: {
+				Text: true,
+				Comments: true
+			}			
 		});
 	});
 	
