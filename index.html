@@ -5,13 +5,111 @@
     <title>Diagrammatic Readings</title>
   </head>
   <body>
+
+
+<article> 	
     <h1>Diagrammatic Readings</h1>
 
+	<div id="wave-spectrogram" style="margin-bottom: -50px;">WCWsomuch</div>
+	
+	<!-- Create a div where the audio waves will be shown --> 
+    <div id="waveform"></div>
+	<div id="wave-timeline"></div>	
+	
+	<div id="annotations"></div>
 
-    <script src="js.js"></script>
-    	<script>
-    	console.log(x);
-    	</script>
+	<!-- main wavesurfer.js lib -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/wavesurfer.min.js"></script>
+	
+	<!-- spectrogram format renderer -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.spectrogram.min.js"></script>
+	 
+	 <!-- elan transcript renderer -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.elan.min.js"></script>
+	 
+	 <!--minimap -->
+	 <script src='https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.minimap.min.js'></script>
+	 
+	 <!-- minimap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.regions.min.js"></script>
+
+	<!-- wavesurfer.js regions -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.regions.min.js"></script>
+	
+	
+	<!-- timeline -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.timeline.min.js"></script>
+
+	<p align="center">
+		<button class="btn btn-primary" onclick="wavesurfer.playPause()">
+			<i class="glyphicon glyphicon-play"></i>
+							Play/Pause
+		</button>
+		
+	</p>
+	
+	
+	<script>
+	var wavesurfer = WaveSurfer.create({
+		container: document.querySelector ('#waveform'),
+		progressColor: "black",
+		waveColor: 'blue',
+		backgroundColor: '#fcfcfc',
+		loop: true,
+		scrollParent: true,
+		maxCanvasWidth: 5000,
+		mediaControls: true,		
+		minPxPerSec: 75
+	});	
+	
+	
+	wavesurfer.on('ready', function () {
+		var spectrogram = Object.create(WaveSurfer.Spectrogram);
+		spectrogram.init({
+			wavesurfer: wavesurfer,
+			container: "#wave-spectrogram",
+			labels: true,
+			fftSamples: 512,
+			loop: true
+		});
+	});
+	
+	
+	wavesurfer.on('ready', function () {
+		wavesurfer.addRegion({
+		start: 2,
+		end: 5,
+		color: 'hsla(100, 100%, 30%, 0.1)' 
+		});
+	});
+	
+	wavesurfer.on('ready', function () {
+		var timeline = Object.create(WaveSurfer.Timeline);
+		timeline.init({
+			wavesurfer: wavesurfer,
+			container: "#wave-timeline"
+		});
+	});
+	
+	
+	
+	wavesurfer.on('ready', function () {
+		var elan = Object.create(WaveSurfer.Elan);
+		elan.init({
+			wavesurfer: wavesurfer,
+			container: "#annotations",
+			url: 'creeleyelan.xml',
+			tiers: {
+				Text: true,
+				Comments: true
+			}
+		});
+	});
+	
+	wavesurfer.load('creeley.mp3');
+	
+	</script>
+</article>
 
 
 
