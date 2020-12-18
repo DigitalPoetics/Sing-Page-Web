@@ -49,29 +49,62 @@
 	
 	
 	<script>
-	var wavesurfer;
-
-	// Init & load
-	document.addEventListener('DOMContentLoaded', function() {
-    	// Create an instance
-    	var options = {
-        	container: '#waveform',
-        	waveColor: 'violet',
-        	progressColor: 'purple',
-        	loaderColor: 'purple',
-        	cursorColor: 'navy',
-        	backend: 'MediaElement'
-        	plugins: [
-            	WaveSurfer.spectrogram.create({
-                	container: '#wave-spectrogram'
-            	})
-        	]
-    	};
-
-    	wavesurfer = WaveSurfer.create(options);
-
-    	wavesurfer.load('creeley.wav');
+	var wavesurfer = WaveSurfer.create({
+		container: document.querySelector ('#waveform'),
+		progressColor: "black",
+		waveColor: 'blue',
+		backgroundColor: '#fcfcfc',
+		loop: true,
+		scrollParent: true,
+		maxCanvasWidth: 5000,
+		mediaControls: true,		
+		minPxPerSec: 75,
+		plugins: [WaveSurfer.minimap.create(pluginOptions)]
+	});		
+	
+	wavesurfer.on('ready', function () {
+		var spectrogram = Object.create(WaveSurfer.Spectrogram);
+		spectrogram.init({
+			wavesurfer: wavesurfer,
+			container: "#wave-spectrogram",
+			labels: true,
+			fftSamples: 512,
+			loop: true
 		});
+	});	
+	
+	wavesurfer.on('ready', function () {
+		wavesurfer.addRegion({
+		start: 2,
+		end: 5,
+		color: 'hsla(100, 100%, 30%, 0.1)' 
+		});
+	});
+	
+	wavesurfer.on('ready', function () {
+		var timeline = Object.create(WaveSurfer.Timeline);
+		timeline.init({
+			wavesurfer: wavesurfer,
+			container: "#wave-timeline"
+		});
+	});	
+	
+	wavesurfer.on('ready', function () {
+		var elan = Object.create(WaveSurfer.ELAN);
+		elan.init({
+			wavesurfer: wavesurfer,
+			url: 'creeleyelan.xml',
+			container: "#annotations",
+			tiers: {
+				Text: true,
+				Comments: true
+			}			
+		});
+	});
+	
+	wavesurfer.load('creeley.wav');
+
+
 	</script>
 </article>
 
