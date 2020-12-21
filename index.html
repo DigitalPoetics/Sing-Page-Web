@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>Diagrammatic Readings</title>
 
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 	<!-- main wavesurfer.js lib -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/wavesurfer.min.js"></script>
 
@@ -98,11 +103,11 @@
 		var elan = Object.create(WaveSurfer.Elan);
 		elan.init({
 			wavesurfer: wavesurfer,
-			url: 'https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/001z.xml',
+			url: '001z.xml',
 			container: "#annotations",
 			tiers: {
 				Text: true,
-				Comments: true
+				Comments: false
 			}			
 		});
 	});
