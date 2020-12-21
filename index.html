@@ -17,17 +17,6 @@
 
 
 	
-	<!-- Create a div where the audio waves will be shown --> 
-
-	<div id="wave-timeline" class="viz">
-		<div id="waveform"></div>	
-		<iframe src="pitch.html" height="200px"></iframe>
-	</div>
-	
-	<div id="wave-spectrogram" class="viz"></div>
-
-
-	<!-- D3 viz -->
 
 
 
@@ -43,11 +32,18 @@
 	 <script src='https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.minimap.min.js'></script>
 
 	<!-- wavesurfer.js regions -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.regions.min.js"></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.regions.min.js"></script>	
 	
 	<!-- timeline -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.timeline.min.js"></script>
+
+
+
+	<!-- Create a div where the audio waves will be shown --> 
+
+	<div id="waveform"></div>
+	<div id="wave-timeline" class="viz"></div>
+	<div id="wave-spectrogram" class="viz"></div>
 
 	<p align="center">
 		<button class="btn btn-primary" onclick="wavesurfer.playPause()">
@@ -59,6 +55,9 @@
 
 
 	<div id="annotations"></div>
+
+	<!-- D3 viz -->
+	<iframe src="pitch.html" height="200px"></iframe>
 	
 	
 	<script>
