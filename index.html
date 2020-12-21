@@ -3,25 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Diagrammatic Readings</title>
-    <style type="text/css">
-    	.viz {
-    		width: 1000px;
-    	}
-    </style>
-  </head>
-  <body>
-
-
-<article> 	
-    <h1>Diagrammatic Readings</h1>
-
-
-	
-
-
 
 	<!-- main wavesurfer.js lib -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/wavesurfer.min.js"></script>
+
+
 	<!-- spectrogram format renderer -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.spectrogram.min.js"></script>
 	 
@@ -36,6 +22,13 @@
 	
 	<!-- timeline -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.timeline.min.js"></script>
+
+  </head>
+  <body>
+
+
+<article> 	
+    <h1>Diagrammatic Readings</h1>
 
 
 
@@ -57,10 +50,11 @@
 	<div id="annotations"></div>
 
 	<!-- D3 viz -->
-	<iframe src="pitch.html" height="200px"></iframe>
+
 	
 	
 	<script>
+
 	var wavesurfer = WaveSurfer.create({
 		container: document.querySelector ('#waveform'),
 		progressColor: "black",
@@ -113,7 +107,7 @@
 		});
 	});
 	
-	wavesurfer.load('creeley.mp3');
+	wavesurfer.load('https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/creeley.mp3');
 	</script>
 
 	
