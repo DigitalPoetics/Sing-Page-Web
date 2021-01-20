@@ -61,7 +61,7 @@
 	<script>
 
 	var wavesurfer = WaveSurfer.create({
-		container: document.querySelector ('#waveform'),
+		container: document.querySelector('#waveform'),
 		progressColor: "black",
 		waveColor: 'blue',
 		backgroundColor: '#fcfcfc',
@@ -100,10 +100,10 @@
 	});	
 	
 	wavesurfer.on('ready', function () {
-		var elan = Object.create(WaveSurfer.Elan);
+		var elan = Object.create(WaveSurfer.ELAN);
 		elan.init({
 			wavesurfer: wavesurfer,
-			url: '001z.xml',
+			url: 'https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/001z.xml',
 			container: "#annotations",
 			tiers: {
 				Text: true,
