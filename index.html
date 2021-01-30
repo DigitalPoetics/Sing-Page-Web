@@ -5,8 +5,9 @@
     <title>Diagrammatic Readings</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!-- bootstrap -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<!-- bootstrap -->	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 	<!-- main wavesurfer.js lib -->
@@ -28,6 +29,13 @@
 	<!-- timeline -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.timeline.min.js"></script>
 
+	<!-- Load d3.js -->
+	<script src="https://d3js.org/d3.v4.js"></script>
+
+	<!-- Load Chart.js and papaparse.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script Src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.0/papaparse.min.js"></script>
+
   </head>
   <body>
 
@@ -37,39 +45,66 @@
 
 
 
-	<!-- Create a div where the audio waves will be shown --> 
+<div class="diagram">
+	<!-- Create a div where the audio waves will be shown -->
+	<div id="wave-spectrogram"></div>
 
+	<!-- Create a div where the graph will take place -->
 	<div id="waveform"></div>
-	<div id="wave-timeline" class="viz"></div>
-	<div id="wave-spectrogram" class="viz"></div>
+	<canvas id="myChart" style="height: 200px; width: 700px;"></canvas>
 
-	<p align="center">
+	<div id="wave-timeline"></div>
+	
+
+	<div style="text-align: center">
 		<button class="btn btn-primary" onclick="wavesurfer.playPause()">
 			<i class="glyphicon glyphicon-play"></i>
 							Play/Pause
 		</button>
-		
-	</p>
 
+		<p class="row">
+			<div class="col-xs-1">
+				<i class="glyphicon glyphicon-zoom-in"></i>
+			</div>
+
+			<div class="col-xs-10">
+				<input id="slider" type="range" min="1" max="200" value="1" style="width: 100%" />
+			</div>
+		  
+			<div class="col-xs-1">
+				<i class="glyphicon glyphicon-zoom-out"></i>
+			</div>
+		</p>		
+	</div>
+
+</div>
 
 	<div id="annotations"></div>
 
-	<!-- D3 viz -->
+		<!-- D3 viz -->
+		<div id="my_dataviz"></div>
 
 	
+
 	
+
+	<script type="text/javascript" src="pitch.js"></script>
+	<script type="text/javascript" src="pitchchart.js"></script>
+
 	<script>
 
 	var wavesurfer = WaveSurfer.create({
 		container: document.querySelector('#waveform'),
 		progressColor: "black",
-		waveColor: 'blue',
+		waveColor: 'gray',
 		backgroundColor: '#fcfcfc',
 		loop: true,
 		scrollParent: true,
-		maxCanvasWidth: 5000,
+		maxCanvasWidth: 500,
 		mediaControls: true,		
-		minPxPerSec: 75
+		minPxPerSec: 75,
+		hideScrollbar: false,
+		renderer: 'MultiCanvas'
 	});		
 	
 	wavesurfer.on('ready', function () {
@@ -77,9 +112,7 @@
 		spectrogram.init({
 			wavesurfer: wavesurfer,
 			container: "#wave-spectrogram",
-			labels: true,
-			fftSamples: 512,
-			loop: true
+			fftSamples: 512
 		});
 	});	
 	
@@ -112,8 +145,18 @@
 		});
 	});
 	
-	wavesurfer.load('https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/001z.mp3');
+	wavesurfer.load('https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/creeley.mp3');
+	
+	var slider = document.querySelector('#slider');
+
+	slider.oninput = function () {
+  		var zoomLevel = Number(slider.value);
+  		wavesurfer.zoom(zoomLevel);
+	};
+
 	</script>
+
+
 
 	
 

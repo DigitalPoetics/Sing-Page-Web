@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+    <!-- main wavesurfer.js lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/wavesurfer.min.js"></script>
+
+    <!-- elan transcript renderer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.elan.min.js"></script>   
+     
+    </head>
+    <body>
+    <!-- Create a div where the graph will take place -->
+    <div id="waveform"></div>
+
+    <div style="text-align: center">
+		<button class="btn btn-primary" onclick="wavesurfer.playPause()">
+			<i class="glyphicon glyphicon-play"></i>
+							Play/Pause
+        </button>
+    </div>
+    <div id="annotations"></div>
+    
+    <script>
+
+        var wavesurfer = WaveSurfer.create({
+            container: document.querySelector('#waveform'),
+            progressColor: "black",
+            waveColor: 'gray',
+            loop: true,
+            scrollParent: true,
+            maxCanvasWidth: 500,
+            mediaControls: true,		
+            minPxPerSec: 75,
+            hideScrollbar: false
+        });	  
+       	
+        wavesurfer.on('ready', function () {
+            var elan = Object.create(WaveSurfer.ELAN);
+            elan.init({
+                wavesurfer: wavesurfer,
+                url: 'https://raw.githubusercontent.com/katspaugh/wavesurfer.js/master/example/elan/transcripts/001z.xml',
+                container: "#annotations",
+                tiers: {
+                    Text: true,
+                    Comments: false
+                }			
+            });
+        });
+        
+        wavesurfer.load('https://raw.githubusercontent.com/katspaugh/wavesurfer.js/master/example/elan/transcripts/001z.mp3');
+        
+    
+        </script>
+        
+
+    </body>
+</html>

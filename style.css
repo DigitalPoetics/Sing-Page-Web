@@ -27,3 +27,11 @@ td.wavesurfer-tier-Comments {
     background-color: #c9e2b3;
 }
 
+.diagram {
+    width: 700px;
+    height: 700px;
+    position: relative;
+
+    margin-left: 50px;
+}
+

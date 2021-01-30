@@ -1,21 +1,6 @@
-<!-- Code from d3-graph-gallery.com -->
-<!DOCTYPE html>
-<meta charset="utf-8">
-
-<!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.js"></script>
-
-<!-- Create a div where the graph will take place -->
-<div id="my_dataviz"></div>
-
-<script type="text/javascript" src="pitch.js"></script>
-
-
-<script>
-
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 30, bottom: 30, left: 60},
-    width = 10000 - margin.left - margin.right,
+    width = 700 - margin.left - margin.right,
     height = 150 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -32,7 +17,7 @@ d3.csv("https://diagrammaticreadings.github.io/Sing-Page-Web/creeleypitch.csv", 
 
   // Add X axis
   var x = d3.scaleLinear()
-    .domain([0, 35])
+    .domain([0, 8])
     .range([ 0, width ]);
   svg.append("g")
     .attr("transform", "translate(0," + height + ")")
@@ -57,5 +42,3 @@ d3.csv("https://diagrammaticreadings.github.io/Sing-Page-Web/creeleypitch.csv", 
       .style("fill", "#69b3a2")
 
 })
-
-</script>
