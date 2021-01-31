@@ -47,16 +47,20 @@
 
 <div class="diagram">
 	<!-- Create a div where the audio waves will be shown -->
-	<div id="wave-spectrogram"></div>
+
+	<!-- <div id="wave-spectrogram"></div> -->
 
 	<!-- Create a div where the graph will take place -->
-	<div id="waveform"></div>
-	<canvas id="myChart" style="height: 200px; width: 700px;"></canvas>
+	<div id="wave-timeline"  style="padding-right: 20px;"></div>
+	<div id="waveform" style="padding-right: 20px;"></div>
 
-	<div id="wave-timeline"></div>
+	<div style="margin-left: -55px; padding-right: 15px;"> 
+		<canvas id="myChart" style="width: auto; height: 250px;"></canvas>
+	</div>
+
 	
 
-	<div style="text-align: center">
+	<div style="text-align: center; padding-right: 60px;">
 		<button class="btn btn-primary" onclick="wavesurfer.playPause()">
 			<i class="glyphicon glyphicon-play"></i>
 							Play/Pause
@@ -81,14 +85,7 @@
 
 	<div id="annotations"></div>
 
-		<!-- D3 viz -->
-		<div id="my_dataviz"></div>
 
-	
-
-	
-
-	<script type="text/javascript" src="pitch.js"></script>
 	<script type="text/javascript" src="pitchchart.js"></script>
 
 	<script>
@@ -100,22 +97,12 @@
 		backgroundColor: '#fcfcfc',
 		loop: true,
 		scrollParent: true,
-		maxCanvasWidth: 500,
 		mediaControls: true,		
 		minPxPerSec: 75,
 		hideScrollbar: false,
 		renderer: 'MultiCanvas'
 	});		
-	
-	wavesurfer.on('ready', function () {
-		var spectrogram = Object.create(WaveSurfer.Spectrogram);
-		spectrogram.init({
-			wavesurfer: wavesurfer,
-			container: "#wave-spectrogram",
-			fftSamples: 512
-		});
-	});	
-	
+		
 	wavesurfer.on('ready', function () {
 		wavesurfer.addRegion({
 		start: 2,
@@ -145,7 +132,7 @@
 		});
 	});
 	
-	wavesurfer.load('https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/creeley.mp3');
+	wavesurfer.load('https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/WCWsomuch.mp3');
 	
 	var slider = document.querySelector('#slider');
 

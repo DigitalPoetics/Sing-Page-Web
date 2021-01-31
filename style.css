@@ -28,10 +28,13 @@ td.wavesurfer-tier-Comments {
 }
 
 .diagram {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 550px;
     position: relative;
-
-    margin-left: 50px;
+    margin-left: 100px;
+    border: 1px solid #555;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 

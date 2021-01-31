@@ -1,0 +1,286 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 8.136031746031746 
+tiers? <exists> 
+size = 5 
+item []: 
+    item [1]:
+        class = "TextTier" 
+        name = "tones" 
+        xmin = 0 
+        xmax = 8.136031746031746 
+        points: size = 22 
+        points [1]:
+            number = 0.4580124254193402 
+            mark = "H*" 
+        points [2]:
+            number = 0.7682385120094456 
+            mark = "!H" 
+        points [3]:
+            number = 1.1160596739089645 
+            mark = "H-" 
+        points [4]:
+            number = 1.5252655259109158 
+            mark = "H*" 
+        points [5]:
+            number = 2.1335444951030054 
+            mark = "H!" 
+        points [6]:
+            number = 2.750786776917386 
+            mark = "H-H%" 
+        points [7]:
+            number = 3.0653703306279 
+            mark = "H*" 
+        points [8]:
+            number = 3.3750396240347817 
+            mark = "!H" 
+        points [9]:
+            number = 3.7787729524882696 
+            mark = "L" 
+        points [10]:
+            number = 4.210792453362212 
+            mark = "L-L%" 
+        points [11]:
+            number = 4.770761756975035 
+            mark = "H*" 
+        points [12]:
+            number = 5.0600331992699505 
+            mark = "H-" 
+        points [13]:
+            number = 5.395630152599636 
+            mark = "H*" 
+        points [14]:
+            number = 5.717112515272459 
+            mark = "H-" 
+        points [15]:
+            number = 5.894942008630324 
+            mark = "L*" 
+        points [16]:
+            number = 6.145442256311477 
+            mark = "L-L%" 
+        points [17]:
+            number = 6.634749329740796 
+            mark = "H*" 
+        points [18]:
+            number = 6.836103437143603 
+            mark = "H-" 
+        points [19]:
+            number = 7.135234976976351 
+            mark = "H*" 
+        points [20]:
+            number = 7.2782502666032345 
+            mark = "H-" 
+        points [21]:
+            number = 7.523184673908965 
+            mark = "H*" 
+        points [22]:
+            number = 8.096202971615798 
+            mark = "L-L%" 
+    item [2]:
+        class = "TextTier" 
+        name = "beats" 
+        xmin = 0 
+        xmax = 8.136031746031746 
+        points: size = 13 
+        points [1]:
+            number = 0.4580124254193402 
+            mark = "B" 
+        points [2]:
+            number = 0.7682385120094456 
+            mark = "B" 
+        points [3]:
+            number = 1.5252655259109158 
+            mark = "B" 
+        points [4]:
+            number = 2.1335444951030054 
+            mark = "B" 
+        points [5]:
+            number = 3.0653703306279 
+            mark = "B" 
+        points [6]:
+            number = 3.3750396240347817 
+            mark = "B" 
+        points [7]:
+            number = 3.7787729524882696 
+            mark = "B" 
+        points [8]:
+            number = 4.770761756975035 
+            mark = "B" 
+        points [9]:
+            number = 5.395630152599636 
+            mark = "B" 
+        points [10]:
+            number = 5.894942008630324 
+            mark = "B" 
+        points [11]:
+            number = 6.634749329740796 
+            mark = "B" 
+        points [12]:
+            number = 7.135234976976351 
+            mark = "B" 
+        points [13]:
+            number = 7.523184673908965 
+            mark = "B" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 8.136031746031746 
+        intervals: size = 20 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.11632858472041245 
+            text = "" 
+        intervals [2]:
+            xmin = 0.11632858472041245 
+            xmax = 0.6845389674280181 
+            text = "so" 
+        intervals [3]:
+            xmin = 0.6845389674280181 
+            xmax = 1.123440807378463 
+            text = "much" 
+        intervals [4]:
+            xmin = 1.123440807378463 
+            xmax = 1.808011855446969 
+            text = "depends" 
+        intervals [5]:
+            xmin = 1.808011855446969 
+            xmax = 2.2779353065230574 
+            text = "upon" 
+        intervals [6]:
+            xmin = 2.2779353065230574 
+            xmax = 2.750786776917386 
+            text = "a" 
+        intervals [7]:
+            xmin = 2.750786776917386 
+            xmax = 2.9580431032265886 
+            text = "the" 
+        intervals [8]:
+            xmin = 2.9580431032265886 
+            xmax = 3.2666247446202905 
+            text = "red" 
+        intervals [9]:
+            xmin = 3.2666247446202905 
+            xmax = 3.6458270601637937 
+            text = "wheel" 
+        intervals [10]:
+            xmin = 3.6458270601637937 
+            xmax = 4.210792453362212 
+            text = "barrow" 
+        intervals [11]:
+            xmin = 4.210792453362212 
+            xmax = 4.619164177793678 
+            text = "<sil>" 
+        intervals [12]:
+            xmin = 4.619164177793678 
+            xmax = 5.0600331992699505 
+            text = "glazed" 
+        intervals [13]:
+            xmin = 5.0600331992699505 
+            xmax = 5.2335144205509865 
+            text = "with" 
+        intervals [14]:
+            xmin = 5.2335144205509865 
+            xmax = 5.717112515272459 
+            text = "rain" 
+        intervals [15]:
+            xmin = 5.717112515272459 
+            xmax = 6.145442256311477 
+            text = "water" 
+        intervals [16]:
+            xmin = 6.145442256311477 
+            xmax = 6.836103437143603 
+            text = "beside" 
+        intervals [17]:
+            xmin = 6.836103437143603 
+            xmax = 7.000373266144229 
+            text = "the" 
+        intervals [18]:
+            xmin = 7.000373266144229 
+            xmax = 7.2782502666032345 
+            text = "white" 
+        intervals [19]:
+            xmin = 7.2782502666032345 
+            xmax = 8.096202971615798 
+            text = "chickens" 
+        intervals [20]:
+            xmin = 8.096202971615798 
+            xmax = 8.136031746031746 
+            text = "" 
+    item [4]:
+        class = "TextTier" 
+        name = "breaks" 
+        xmin = 0 
+        xmax = 8.136031746031746 
+        points: size = 17 
+        points [1]:
+            number = 0.6845389674280181 
+            mark = "1" 
+        points [2]:
+            number = 1.123440807378463 
+            mark = "3" 
+        points [3]:
+            number = 1.808011855446969 
+            mark = "0" 
+        points [4]:
+            number = 2.2779353065230574 
+            mark = "0" 
+        points [5]:
+            number = 2.750786776917386 
+            mark = "4" 
+        points [6]:
+            number = 2.9580431032265886 
+            mark = "1" 
+        points [7]:
+            number = 3.2666247446202905 
+            mark = "1" 
+        points [8]:
+            number = 3.6458270601637937 
+            mark = "1" 
+        points [9]:
+            number = 4.210792453362212 
+            mark = "4" 
+        points [10]:
+            number = 5.0600331992699505 
+            mark = "3" 
+        points [11]:
+            number = 5.2335144205509865 
+            mark = "1" 
+        points [12]:
+            number = 5.717112515272459 
+            mark = "3" 
+        points [13]:
+            number = 6.145442256311477 
+            mark = "4" 
+        points [14]:
+            number = 6.836103437143603 
+            mark = "3" 
+        points [15]:
+            number = 7.000373266144229 
+            mark = "1" 
+        points [16]:
+            number = 7.2782502666032345 
+            mark = "3" 
+        points [17]:
+            number = 8.096202971615798 
+            mark = "4" 
+    item [5]:
+        class = "TextTier" 
+        name = "misc" 
+        xmin = 0 
+        xmax = 8.136031746031746 
+        points: size = 4 
+        points [1]:
+            number = 0.7682385120094456 
+            mark = "offbeat (o) or demotion(O)" 
+        points [2]:
+            number = 2.750786776917386 
+            mark = "<H% rises>" 
+        points [3]:
+            number = 3.3750396240347817 
+            mark = "demotion(O)" 
+        points [4]:
+            number = 6.147135090792526 
+            mark = "[B]" 

@@ -9,13 +9,14 @@
         //<script>
         const ctx = document.getElementById("myChart").getContext("2d");
 
+
+
         fetch("https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/WCWsomuch.csv")
             .then(response => response.text())
             .then((csv) => {
                 const data = Papa.parse(csv, {header: true}).data;
                 drawData(data);
             }); 
-
 
 
         function drawData (datasets) {
@@ -43,6 +44,7 @@
             type: "scatter", 
             data: dataObj,  //add data
             options: {
+                maintainAspectRatio: false,
                 legend: {
                     display: false
                 },
@@ -51,6 +53,7 @@
                     text: 'WCWsomuch',
                     position: 'top'
                 },
+
                 scales: {
                     xAxes: [{
                         type: 'linear',
