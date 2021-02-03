@@ -7,9 +7,13 @@
         
         
         //<script>
-        const ctx = document.getElementById("myChart").getContext("2d");
 
 
+
+        const ctx = wavesurfer.drawer.canvases[0].waveCtx;
+
+
+  
 
         fetch("https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/WCWsomuch.csv")
             .then(response => response.text())
@@ -48,8 +52,14 @@
                 legend: {
                     display: false
                 },
+                layout: {
+                    padding: {
+                        top: 50,
+                        left: -120
+                    }
+                },
                 title: {
-                    display: true,
+                    display: false,
                     text: 'WCWsomuch',
                     position: 'top'
                 },

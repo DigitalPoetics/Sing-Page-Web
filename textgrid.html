@@ -7,15 +7,107 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+        <script Src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.0/papaparse.min.js"></script>
+        
+        <!-- D3  -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+        
     </head>
     <body>
 
-        <script>
-            const obj = JSON.parse("WCWsomuchTG.json");
+        <div style="width: 90%;">
+            <canvas id="myTextgrid" style="height: 200px; width: 700px;"></canvas>
+        </div>
 
-            obj.forEach(function(d) {
-                console.log(d.tier_name);
+        <script>
+        
+        const ctxTG = document.getElementById("myTextgrid").getContext("2d");
+
+        var textgrid = [];
+            d3.csv("https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/WCWsomuchTG.csv", function (d) {
+                textgrid.push({
+                    tier: d.tier_name,
+                    point: +d.start_time,
+                    text: d.text
+                });
+            }).then(function(d) {
+                const textgridTones = d3.nest()
+                                    .key(function(k) {return k.tier;})
+                                    .entries(textgrid);
+                console.log(textgridTones);
+                drawText(textgridTones);
             });
+                 
+        function drawText (dataTG) {
+
+            const toneData = [];
+            dataTG.forEach(function(d) {
+                const obj = {
+                    x: +d.point,
+                    y: 6
+                }
+                toneData.push(obj);
+                console.log(obj);
+            });
+            
+            const dataObj = {       
+                datasets: [{
+                    //labels: labels,
+                    label: 'Scatter Dataset',
+                    data: toneData, 
+                    pointRadius: 1.5,
+                    backgroundColor: 'blue'
+                }]
+
+            }
+
+            const chart = new Chart(ctxTG, {
+                type: "scatter", 
+                data: dataObj,
+                options: {
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'WCWsomuch',
+                        position: 'top'
+                    },
+
+                    scales: {
+                        xAxes: [{
+                            type: 'linear',
+                            position: 'bottom',
+                            scaleLabel: {
+                                display: true,
+                                labelString: "Time (s)",
+                                fontsize: 12
+                            }
+                        }],
+                        yAxes: [{
+                            ticks: {min: 0, max: 10},
+                            scaleLabel: {
+                                display: true,
+                                labelString: "Frequency (Hz)",
+                                fontsize: 12
+                            }
+                        }]
+                    },
+                    tooltips: {
+                        callbacks: {
+                            title: (items,data) => tones[items[0].index].y //show frequency
+                        }
+                    }
+                }
+            });
+
+        }   
+            
+            
         </script>
 
     </body>

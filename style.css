@@ -34,7 +34,10 @@ td.wavesurfer-tier-Comments {
     margin-left: 100px;
     border: 1px solid #555;
     padding-left: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    overflow-x: auto;
 }
+
+
+
+
 

@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
 	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 	<!-- bootstrap -->	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -35,7 +37,10 @@
 	<!-- Load Chart.js and papaparse.js -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <script Src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.0/papaparse.min.js"></script>
-
+	
+	<!-- D3  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.5.0/d3.min.js"></script>
+	
   </head>
   <body>
 
@@ -49,15 +54,12 @@
 	<!-- Create a div where the audio waves will be shown -->
 
 	<!-- <div id="wave-spectrogram"></div> -->
-
+	
 	<!-- Create a div where the graph will take place -->
 	<div id="wave-timeline"  style="padding-right: 20px;"></div>
-	<div id="waveform" style="padding-right: 20px;"></div>
 
-	<div style="margin-left: -55px; padding-right: 15px;"> 
-		<canvas id="myChart" style="width: auto; height: 250px;"></canvas>
-	</div>
-
+	<div id="waveform" style="padding-right: 20px; width: 100%"></div>
+	<div id="waveform1" style="padding-right: 20px; width: 100%"></div>
 	
 
 	<div style="text-align: center; padding-right: 60px;">
@@ -86,7 +88,7 @@
 	<div id="annotations"></div>
 
 
-	<script type="text/javascript" src="pitchchart.js"></script>
+
 
 	<script>
 
@@ -100,8 +102,25 @@
 		mediaControls: true,		
 		minPxPerSec: 75,
 		hideScrollbar: false,
-		renderer: 'MultiCanvas'
+		renderer: 'MultiCanvas',
+		height: 256,
+		width: 500
 	});		
+
+	var wavesurfer = WaveSurfer.create({
+		container: document.querySelector('#waveform1'),
+		progressColor: "black",
+		waveColor: 'gray',
+		backgroundColor: '#fcfcfc',
+		loop: true,
+		scrollParent: true,
+		mediaControls: true,		
+		minPxPerSec: 75,
+		hideScrollbar: false,
+		renderer: 'MultiCanvas',
+		height: 256,
+		width: 500
+	});	
 		
 	wavesurfer.on('ready', function () {
 		wavesurfer.addRegion({
@@ -118,9 +137,13 @@
 			container: "#wave-timeline"
 		});
 	});	
+
+/*	wavesurfer.on('ready', function() {
+		wavesurfer.drawer.canvases[0].wave.style.zIndex = 2;
+	}); */
 	
 	wavesurfer.on('ready', function () {
-		var elan = Object.create(WaveSurfer.ELAN);
+		var elan = Object.create(WaveSurfer.Elan);
 		elan.init({
 			wavesurfer: wavesurfer,
 			url: 'https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/001z.xml',
@@ -133,7 +156,7 @@
 	});
 	
 	wavesurfer.load('https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/WCWsomuch.mp3');
-	
+
 	var slider = document.querySelector('#slider');
 
 	slider.oninput = function () {
@@ -142,6 +165,8 @@
 	};
 
 	</script>
+
+	<script type="text/javascript" src="pitchchart.js"></script>
 
 
 
