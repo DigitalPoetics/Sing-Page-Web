@@ -1,0 +1,3362 @@
+[
+	{
+		"name": "Vito Acconci",
+		"type": "member"
+	},
+	{
+		"name": "Kathy Acker",
+		"type": "member"
+	},
+	{
+		"name": "Diane Ackerman",
+		"type": "member"
+	},
+	{
+		"name": "Helen Adam",
+		"type": "member"
+	},
+	{
+		"name": "Etel Adnan",
+		"type": "member"
+	},
+	{
+		"name": "Ai",
+		"type": "member"
+	},
+	{
+		"name": "Rosa Alcalá",
+		"type": "member"
+	},
+	{
+		"name": "Elizabeth Alexander",
+		"type": "member"
+	},
+	{
+		"name": "Will Alexander",
+		"type": "member"
+	},
+	{
+		"name": "Sherman Alexie",
+		"type": "member"
+	},
+	{
+		"name": "Agha Shahid Ali",
+		"type": "member"
+	},
+	{
+		"name": "Dick Allen",
+		"type": "member"
+	},
+	{
+		"name": "Nell Altizer",
+		"type": "member"
+	},
+	{
+		"name": "Julia Alvarez",
+		"type": "member"
+	},
+	{
+		"name": "Kingsley Amis",
+		"type": "member"
+	},
+	{
+		"name": "A. R. Ammons",
+		"type": "member"
+	},
+	{
+		"name": "Daniel Anderson",
+		"type": "member"
+	},
+	{
+		"name": "Jon Anderson",
+		"type": "member"
+	},
+	{
+		"name": "Bruce Andrews",
+		"type": "member"
+	},
+	{
+		"name": "David Antin",
+		"type": "member"
+	},
+	{
+		"name": "Louis Aragon",
+		"type": "member"
+	},
+	{
+		"name": "Rae Armantrout",
+		"type": "member"
+	},
+	{
+		"name": "John Ashbery",
+		"type": "member"
+	},
+	{
+		"name": "Jimmy Santiago Baca",
+		"type": "member"
+	},
+	{
+		"name": "David Baker",
+		"type": "member"
+	},
+	{
+		"name": "Peter Balakian",
+		"type": "member"
+	},
+	{
+		"name": "Mary Jo Bang",
+		"type": "member"
+	},
+	{
+		"name": "Amiri Baraka (LeRoi Jones)",
+		"type": "member"
+	},
+	{
+		"name": "Judith Barrington",
+		"type": "member"
+	},
+	{
+		"name": "Bruce Bawer",
+		"type": "member"
+	},
+	{
+		"name": "Dan Beachy-Quick",
+		"type": "member"
+	},
+	{
+		"name": "Ray A. Young Bear",
+		"type": "member"
+	},
+	{
+		"name": "Paul Beatty",
+		"type": "member"
+	},
+	{
+		"name": "Joshua Beckman",
+		"type": "member"
+	},
+	{
+		"name": "Samuel Beckett",
+		"type": "member"
+	},
+	{
+		"name": "Cal Bedient",
+		"type": "member"
+	},
+	{
+		"name": "Josh Bell",
+		"type": "member"
+	},
+	{
+		"name": "Marvin Bell",
+		"type": "member"
+	},
+	{
+		"name": "William Bell",
+		"type": "member"
+	},
+	{
+		"name": "Dodie Bellamy",
+		"type": "member"
+	},
+	{
+		"name": "Martine Bellen",
+		"type": "member"
+	},
+	{
+		"name": "Molly Bendall",
+		"type": "member"
+	},
+	{
+		"name": "Michael Benedikt",
+		"type": "member"
+	},
+	{
+		"name": "Bruce Bennett",
+		"type": "member"
+	},
+	{
+		"name": "Louise Bennett",
+		"type": "member"
+	},
+	{
+		"name": "John Bensko",
+		"type": "member"
+	},
+	{
+		"name": "Steve Benson",
+		"type": "member"
+	},
+	{
+		"name": "Caroline Bergvall",
+		"type": "member"
+	},
+	{
+		"name": "Bill Berkson",
+		"type": "member"
+	},
+	{
+		"name": "Alan Bernheimer",
+		"type": "member"
+	},
+	{
+		"name": "Charles Bernstein",
+		"type": "member"
+	},
+	{
+		"name": "Ted Berrigan",
+		"type": "member"
+	},
+	{
+		"name": "John Berryman",
+		"type": "member"
+	},
+	{
+		"name": "Mei-mei Berssenbrugge",
+		"type": "member"
+	},
+	{
+		"name": "James Bertram",
+		"type": "member"
+	},
+	{
+		"name": "Jen Bervin",
+		"type": "member"
+	},
+	{
+		"name": "Frank Bidart",
+		"type": "member"
+	},
+	{
+		"name": "Elizabeth Bishop",
+		"type": "member"
+	},
+	{
+		"name": "Sherwin Bitsui",
+		"type": "member"
+	},
+	{
+		"name": "Paul Blackburn",
+		"type": "member"
+	},
+	{
+		"name": "Brian Blanchfield",
+		"type": "member"
+	},
+	{
+		"name": "Robin Blaser",
+		"type": "member"
+	},
+	{
+		"name": "Chana Bloch",
+		"type": "member"
+	},
+	{
+		"name": "Ron Block",
+		"type": "member"
+	},
+	{
+		"name": "Michael Blumenthal",
+		"type": "member"
+	},
+	{
+		"name": "Robert Bly",
+		"type": "member"
+	},
+	{
+		"name": "Louise Bogan",
+		"type": "member"
+	},
+	{
+		"name": "Christian Bök",
+		"type": "member"
+	},
+	{
+		"name": "Eavan Boland",
+		"type": "member"
+	},
+	{
+		"name": "Philip Booth",
+		"type": "member"
+	},
+	{
+		"name": "Daniel Borzutzky",
+		"type": "member"
+	},
+	{
+		"name": "David Bottoms",
+		"type": "member"
+	},
+	{
+		"name": "Anne Boyer",
+		"type": "member"
+	},
+	{
+		"name": "Edgar Bowers",
+		"type": "member"
+	},
+	{
+		"name": "Kamau Brathwaite",
+		"type": "member"
+	},
+	{
+		"name": "George Brecht",
+		"type": "member"
+	},
+	{
+		"name": "John Bricuth",
+		"type": "member"
+	},
+	{
+		"name": "Van K. Brock",
+		"type": "member"
+	},
+	{
+		"name": "Jim Brodey",
+		"type": "member"
+	},
+	{
+		"name": "William Bronk",
+		"type": "member"
+	},
+	{
+		"name": "Gwendolyn Brooks",
+		"type": "member"
+	},
+	{
+		"name": "Nicole Brossard",
+		"type": "member"
+	},
+	{
+		"name": "Lee Ann Brown",
+		"type": "member"
+	},
+	{
+		"name": "Rosellen Brown",
+		"type": "member"
+	},
+	{
+		"name": "Sterling A. Brown",
+		"type": "member"
+	},
+	{
+		"name": "Laynie Browne",
+		"type": "member"
+	},
+	{
+		"name": "Michael Dennis Browne",
+		"type": "member"
+	},
+	{
+		"name": "Michael Brownstein",
+		"type": "member"
+	},
+	{
+		"name": "Debra Bruce",
+		"type": "member"
+	},
+	{
+		"name": "Sharon Bryan",
+		"type": "member"
+	},
+	{
+		"name": "Julia Budenz",
+		"type": "member"
+	},
+	{
+		"name": "Charles Bukowski",
+		"type": "member"
+	},
+	{
+		"name": "Michael Burkard",
+		"type": "member"
+	},
+	{
+		"name": "Stanley Burnshaw",
+		"type": "member"
+	},
+	{
+		"name": "William S. Burroughs",
+		"type": "member"
+	},
+	{
+		"name": "David Buuck",
+		"type": "member"
+	},
+	{
+		"name": "John Cage",
+		"type": "member"
+	},
+	{
+		"name": "Rafael Campo",
+		"type": "member"
+	},
+	{
+		"name": "Augusto de Campos",
+		"type": "member"
+	},
+	{
+		"name": "Haroldo de Campos",
+		"type": "member"
+	},
+	{
+		"name": "Melissa Cannon",
+		"type": "member"
+	},
+	{
+		"name": "Henri Chopin",
+		"type": "member"
+	},
+	{
+		"name": "Nick Carbó",
+		"type": "member"
+	},
+	{
+		"name": "Henry Carlile",
+		"type": "member"
+	},
+	{
+		"name": "Julie Carr",
+		"type": "member"
+	},
+	{
+		"name": "Hayden Carruth",
+		"type": "member"
+	},
+	{
+		"name": "Turner Cassity",
+		"type": "member"
+	},
+	{
+		"name": "Charles Causley",
+		"type": "member"
+	},
+	{
+		"name": "Joseph Ceravolo",
+		"type": "member"
+	},
+	{
+		"name": "Lorna Dee Cervantes",
+		"type": "member"
+	},
+	{
+		"name": "Fred Chappell",
+		"type": "member"
+	},
+	{
+		"name": "Maxine Chernoff",
+		"type": "member"
+	},
+	{
+		"name": "Kelly Cherry",
+		"type": "member"
+	},
+	{
+		"name": "Abigail Child",
+		"type": "member"
+	},
+	{
+		"name": "Marilyn Chin",
+		"type": "member"
+	},
+	{
+		"name": "Nicholas Christopher",
+		"type": "member"
+	},
+	{
+		"name": "John Ciardi",
+		"type": "member"
+	},
+	{
+		"name": "Sandra Cisneros",
+		"type": "member"
+	},
+	{
+		"name": "Amy Clampitt",
+		"type": "member"
+	},
+	{
+		"name": "Cheryl Clarke",
+		"type": "member"
+	},
+	{
+		"name": "Carlfriedrich Claus",
+		"type": "member"
+	},
+	{
+		"name": "Lucille Clifton",
+		"type": "member"
+	},
+	{
+		"name": "Claude Closky",
+		"type": "member"
+	},
+	{
+		"name": "Joshua Clover",
+		"type": "member"
+	},
+	{
+		"name": "Bob Cobbing",
+		"type": "member"
+	},
+	{
+		"name": "Henri Cole",
+		"type": "member"
+	},
+	{
+		"name": "Norma Cole",
+		"type": "member"
+	},
+	{
+		"name": "Wanda Coleman",
+		"type": "member"
+	},
+	{
+		"name": "Martha Collins",
+		"type": "member"
+	},
+	{
+		"name": "Conyus",
+		"type": "member"
+	},
+	{
+		"name": "Peter Cooley",
+		"type": "member"
+	},
+	{
+		"name": "Clark Coolidge",
+		"type": "member"
+	},
+	{
+		"name": "Dennis Cooper",
+		"type": "member"
+	},
+	{
+		"name": "Jane Cooper",
+		"type": "member"
+	},
+	{
+		"name": "William Corbett",
+		"type": "member"
+	},
+	{
+		"name": "Martin Corless-Smith",
+		"type": "member"
+	},
+	{
+		"name": "Cid Corman",
+		"type": "member"
+	},
+	{
+		"name": "Alfred Corn",
+		"type": "member"
+	},
+	{
+		"name": "Gregory Corso",
+		"type": "member"
+	},
+	{
+		"name": "Jayne Cortez",
+		"type": "member"
+	},
+	{
+		"name": "Gerald Costanzo",
+		"type": "member"
+	},
+	{
+		"name": "Henri Coulette",
+		"type": "member"
+	},
+	{
+		"name": "Hart Crane",
+		"type": "member"
+	},
+	{
+		"name": "Robert Creeley",
+		"type": "member"
+	},
+	{
+		"name": "Victor Hernández Cruz",
+		"type": "member"
+	},
+	{
+		"name": "J. V. Cunningham",
+		"type": "member"
+	},
+	{
+		"name": "Philip Dacey",
+		"type": "member"
+	},
+	{
+		"name": "Beverly Dahlen",
+		"type": "member"
+	},
+	{
+		"name": "Maria Damon",
+		"type": "member"
+	},
+	{
+		"name": "Tina Darragh",
+		"type": "member"
+	},
+	{
+		"name": "Glover David",
+		"type": "member"
+	},
+	{
+		"name": "Michael Davidson",
+		"type": "member"
+	},
+	{
+		"name": "Donald Davie",
+		"type": "member"
+	},
+	{
+		"name": "Alan Davies",
+		"type": "member"
+	},
+	{
+		"name": "Catherine Davis",
+		"type": "member"
+	},
+	{
+		"name": "Jordan Davis",
+		"type": "member"
+	},
+	{
+		"name": "Lydia Davis",
+		"type": "member"
+	},
+	{
+		"name": "Olena Kalytiak Davis",
+		"type": "member"
+	},
+	{
+		"name": "Peter Davison",
+		"type": "member"
+	},
+	{
+		"name": "Jean Day",
+		"type": "member"
+	},
+	{
+		"name": "Walter De Maria",
+		"type": "member"
+	},
+	{
+		"name": "Mónica de la Torre",
+		"type": "member"
+	},
+	{
+		"name": "Edwin Denby",
+		"type": "member"
+	},
+	{
+		"name": "Jeff Derksen",
+		"type": "member"
+	},
+	{
+		"name": "Toi Derricotte",
+		"type": "member"
+	},
+	{
+		"name": "Babette Deutsch",
+		"type": "member"
+	},
+	{
+		"name": "Thomas Devaney",
+		"type": "member"
+	},
+	{
+		"name": "Christopher Dewdney",
+		"type": "member"
+	},
+	{
+		"name": "W. S. Di Piero",
+		"type": "member"
+	},
+	{
+		"name": "James Dickey",
+		"type": "member"
+	},
+	{
+		"name": "Emily Dickinson",
+		"type": "member"
+	},
+	{
+		"name": "Linh Dinh",
+		"type": "member"
+	},
+	{
+		"name": "Ray DiPalma",
+		"type": "member"
+	},
+	{
+		"name": "Thomas M. Disch",
+		"type": "member"
+	},
+	{
+		"name": "Marcel Duchamp",
+		"type": "member"
+	},
+	{
+		"name": "Stephen Dobyns",
+		"type": "member"
+	},
+	{
+		"name": "Owen Dodson",
+		"type": "member"
+	},
+	{
+		"name": "Timothy Donnelly",
+		"type": "member"
+	},
+	{
+		"name": "Stacy Doris",
+		"type": "member"
+	},
+	{
+		"name": "Edward Dorn",
+		"type": "member"
+	},
+	{
+		"name": "Mark Doty",
+		"type": "member"
+	},
+	{
+		"name": "Keith Douglas",
+		"type": "member"
+	},
+	{
+		"name": "Rita Dove",
+		"type": "member"
+	},
+	{
+		"name": "Philip Dow",
+		"type": "member"
+	},
+	{
+		"name": "Suzanne J. Doyle",
+		"type": "member"
+	},
+	{
+		"name": "Lynne Dreyer",
+		"type": "member"
+	},
+	{
+		"name": "Johanna Drucker",
+		"type": "member"
+	},
+	{
+		"name": "Norman Dubie",
+		"type": "member"
+	},
+	{
+		"name": "Alan Dugan",
+		"type": "member"
+	},
+	{
+		"name": "Denise Duhamel",
+		"type": "member"
+	},
+	{
+		"name": "Robert Duncan",
+		"type": "member"
+	},
+	{
+		"name": "Stephen Dunn",
+		"type": "member"
+	},
+	{
+		"name": "Rachel Blau DuPlessis",
+		"type": "member"
+	},
+	{
+		"name": "Craig Dworkin",
+		"type": "member"
+	},
+	{
+		"name": "Bob Dylan",
+		"type": "member"
+	},
+	{
+		"name": "Richard Eberhart",
+		"type": "member"
+	},
+	{
+		"name": "Russell Edson",
+		"type": "member"
+	},
+	{
+		"name": "Gretel Ehrlich",
+		"type": "member"
+	},
+	{
+		"name": "Larry Eigner",
+		"type": "member"
+	},
+	{
+		"name": "Thomas Sayers Ellis",
+		"type": "member"
+	},
+	{
+		"name": "Kenward Elmslie",
+		"type": "member"
+	},
+	{
+		"name": "Laura Elrick",
+		"type": "member"
+	},
+	{
+		"name": "Lynn Emanuel",
+		"type": "member"
+	},
+	{
+		"name": "John Engels",
+		"type": "member"
+	},
+	{
+		"name": "Daniel Mark Epstein",
+		"type": "member"
+	},
+	{
+		"name": "Elaine Equi",
+		"type": "member"
+	},
+	{
+		"name": "Clayton Eshleman",
+		"type": "member"
+	},
+	{
+		"name": "Martín Espada",
+		"type": "member"
+	},
+	{
+		"name": "Rhina P. Espaillat",
+		"type": "member"
+	},
+	{
+		"name": "George Evans",
+		"type": "member"
+	},
+	{
+		"name": "Peter Everwine",
+		"type": "member"
+	},
+	{
+		"name": "Dan Farrell",
+		"type": "member"
+	},
+	{
+		"name": "Julie Fay",
+		"type": "member"
+	},
+	{
+		"name": "Frederick Feirstein",
+		"type": "member"
+	},
+	{
+		"name": "Irving Feldman",
+		"type": "member"
+	},
+	{
+		"name": "Susan Feldman",
+		"type": "member"
+	},
+	{
+		"name": "Lawrence Ferlinghetti",
+		"type": "member"
+	},
+	{
+		"name": "Edward Field",
+		"type": "member"
+	},
+	{
+		"name": "Annie Finch",
+		"type": "member"
+	},
+	{
+		"name": "Donald Finkel",
+		"type": "member"
+	},
+	{
+		"name": "Robert Fitterman",
+		"type": "member"
+	},
+	{
+		"name": "Nick Flynn",
+		"type": "member"
+	},
+	{
+		"name": "Calvin Forbes",
+		"type": "member"
+	},
+	{
+		"name": "Carolyn Forché",
+		"type": "member"
+	},
+	{
+		"name": "Kathleen Fraser",
+		"type": "member"
+	},
+	{
+		"name": "Benjamin Friedlander",
+		"type": "member"
+	},
+	{
+		"name": "Carol Frost",
+		"type": "member"
+	},
+	{
+		"name": "Joanna Fuhrman",
+		"type": "member"
+	},
+	{
+		"name": "Heather Fuller",
+		"type": "member"
+	},
+	{
+		"name": "Alice Fulton",
+		"type": "member"
+	},
+	{
+		"name": "Christopher Funkhouser",
+		"type": "member"
+	},
+	{
+		"name": "Tess Gallagher",
+		"type": "member"
+	},
+	{
+		"name": "James Galvin",
+		"type": "member"
+	},
+	{
+		"name": "Forrest Gander",
+		"type": "member"
+	},
+	{
+		"name": "Suzanne Gardinier",
+		"type": "member"
+	},
+	{
+		"name": "Drew Gardner",
+		"type": "member"
+	},
+	{
+		"name": "Isabella Gardner",
+		"type": "member"
+	},
+	{
+		"name": "Ilse Garnier",
+		"type": "member"
+	},
+	{
+		"name": "Pierre Garnier",
+		"type": "member"
+	},
+	{
+		"name": "George Garrett",
+		"type": "member"
+	},
+	{
+		"name": "Jean Garrigue",
+		"type": "member"
+	},
+	{
+		"name": "Joan Austin Geier",
+		"type": "member"
+	},
+	{
+		"name": "Susan Gevirtz",
+		"type": "member"
+	},
+	{
+		"name": "Reginald Gibbons",
+		"type": "member"
+	},
+	{
+		"name": "Margaret Gibson",
+		"type": "member"
+	},
+	{
+		"name": "Lawrence Giffin",
+		"type": "member"
+	},
+	{
+		"name": "Christopher Gilbert",
+		"type": "member"
+	},
+	{
+		"name": "Gary Gildner",
+		"type": "member"
+	},
+	{
+		"name": "Carmen Giménez Smith",
+		"type": "member"
+	},
+	{
+		"name": "Madeline Gins",
+		"type": "member"
+	},
+	{
+		"name": "Allen Ginsberg",
+		"type": "member"
+	},
+	{
+		"name": "Dana Gioia",
+		"type": "member"
+	},
+	{
+		"name": "John Giorno",
+		"type": "member"
+	},
+	{
+		"name": "Nikki Giovanni",
+		"type": "member"
+	},
+	{
+		"name": "C. S. Giscombe",
+		"type": "member"
+	},
+	{
+		"name": "Peter Gizzi",
+		"type": "member"
+	},
+	{
+		"name": "Louise Glück",
+		"type": "member"
+	},
+	{
+		"name": "John Godfrey",
+		"type": "member"
+	},
+	{
+		"name": "Patricia Goedicke",
+		"type": "member"
+	},
+	{
+		"name": "Albert Goldbarth",
+		"type": "member"
+	},
+	{
+		"name": "Judith Goldman",
+		"type": "member"
+	},
+	{
+		"name": "Kenneth Goldsmith",
+		"type": "member"
+	},
+	{
+		"name": "Eugen Gomringer",
+		"type": "member"
+	},
+	{
+		"name": "Rigoberto González",
+		"type": "member"
+	},
+	{
+		"name": "Nada Gordon",
+		"type": "member"
+	},
+	{
+		"name": "Sarah Gorham",
+		"type": "member"
+	},
+	{
+		"name": "Michael Gottlieb",
+		"type": "member"
+	},
+	{
+		"name": "Dan Graham",
+		"type": "member"
+	},
+	{
+		"name": "Jorie Graham",
+		"type": "member"
+	},
+	{
+		"name": "K. Lorraine Graham",
+		"type": "member"
+	},
+	{
+		"name": "W. S. Graham",
+		"type": "member"
+	},
+	{
+		"name": "Barbara L. Greenberg",
+		"type": "member"
+	},
+	{
+		"name": "Ted Greenwald",
+		"type": "member"
+	},
+	{
+		"name": "Jane Greer",
+		"type": "member"
+	},
+	{
+		"name": "Debora Greger",
+		"type": "member"
+	},
+	{
+		"name": "Linda Gregg",
+		"type": "member"
+	},
+	{
+		"name": "Robert Grenier",
+		"type": "member"
+	},
+	{
+		"name": "Emily Grosholz",
+		"type": "member"
+	},
+	{
+		"name": "Barbara Guest",
+		"type": "member"
+	},
+	{
+		"name": "Charles Gullans",
+		"type": "member"
+	},
+	{
+		"name": "Thom Gunn",
+		"type": "member"
+	},
+	{
+		"name": "R. S. Gwynn",
+		"type": "member"
+	},
+	{
+		"name": "Brion Gysin",
+		"type": "member"
+	},
+	{
+		"name": "H.D.",
+		"type": "member"
+	},
+	{
+		"name": "Marilyn Hacker",
+		"type": "member"
+	},
+	{
+		"name": "Rachel Hadas",
+		"type": "member"
+	},
+	{
+		"name": "Kimiko Hahn",
+		"type": "member"
+	},
+	{
+		"name": "Donald Hall",
+		"type": "member"
+	},
+	{
+		"name": "Mark Halperin",
+		"type": "member"
+	},
+	{
+		"name": "Daniel Halpern",
+		"type": "member"
+	},
+	{
+		"name": "Michael Hamburger",
+		"type": "member"
+	},
+	{
+		"name": "Al Hansen",
+		"type": "member"
+	},
+	{
+		"name": "Joy Harjo",
+		"type": "member"
+	},
+	{
+		"name": "Edward Harkness",
+		"type": "member"
+	},
+	{
+		"name": "Michael S. Harper",
+		"type": "member"
+	},
+	{
+		"name": "William J. Harris",
+		"type": "member"
+	},
+	{
+		"name": "Jim Harrison",
+		"type": "member"
+	},
+	{
+		"name": "Elizabeth B. Harrod",
+		"type": "member"
+	},
+	{
+		"name": "Carla Harryman",
+		"type": "member"
+	},
+	{
+		"name": "Charles O. Hartman",
+		"type": "member"
+	},
+	{
+		"name": "Matthea Harvey",
+		"type": "member"
+	},
+	{
+		"name": "Robert Hass",
+		"type": "member"
+	},
+	{
+		"name": "William Hathaway",
+		"type": "member"
+	},
+	{
+		"name": "Vaclav Havel",
+		"type": "member"
+	},
+	{
+		"name": "Robert Hayden",
+		"type": "member"
+	},
+	{
+		"name": "Terrance Hayes",
+		"type": "member"
+	},
+	{
+		"name": "Seamus Heaney",
+		"type": "member"
+	},
+	{
+		"name": "John Heath-Stubbs",
+		"type": "member"
+	},
+	{
+		"name": "Anthony Hecht",
+		"type": "member"
+	},
+	{
+		"name": "Allison Adelle Hedge Coke",
+		"type": "member"
+	},
+	{
+		"name": "Michael Heffernan",
+		"type": "member"
+	},
+	{
+		"name": "Lyn Hejinian",
+		"type": "member"
+	},
+	{
+		"name": "Judith Hemschemeyer",
+		"type": "member"
+	},
+	{
+		"name": "William Heyen",
+		"type": "member"
+	},
+	{
+		"name": "Bob Hicok",
+		"type": "member"
+	},
+	{
+		"name": "Dick Higgins",
+		"type": "member"
+	},
+	{
+		"name": "Mitch Highfill",
+		"type": "member"
+	},
+	{
+		"name": "Geoffrey Hill",
+		"type": "member"
+	},
+	{
+		"name": "Brenda Hillman",
+		"type": "member"
+	},
+	{
+		"name": "Edward Hirsch",
+		"type": "member"
+	},
+	{
+		"name": "Åke Hodell",
+		"type": "member"
+	},
+	{
+		"name": "Daniel Hoffman",
+		"type": "member"
+	},
+	{
+		"name": "Linda Hogan",
+		"type": "member"
+	},
+	{
+		"name": "Jonathan Holden",
+		"type": "member"
+	},
+	{
+		"name": "John Hollander",
+		"type": "member"
+	},
+	{
+		"name": "Anselm Hollo",
+		"type": "member"
+	},
+	{
+		"name": "John Holloway",
+		"type": "member"
+	},
+	{
+		"name": "John Holmes",
+		"type": "member"
+	},
+	{
+		"name": "Cathy Park Hong",
+		"type": "member"
+	},
+	{
+		"name": "Garrett Kaoru Hongo",
+		"type": "member"
+	},
+	{
+		"name": "Paul Hoover",
+		"type": "member"
+	},
+	{
+		"name": "David Brendan Hopes",
+		"type": "member"
+	},
+	{
+		"name": "Ben Howard",
+		"type": "member"
+	},
+	{
+		"name": "Richard Howard",
+		"type": "member"
+	},
+	{
+		"name": "Fanny Howe",
+		"type": "member"
+	},
+	{
+		"name": "Susan Howe",
+		"type": "member"
+	},
+	{
+		"name": "Barbara Howes",
+		"type": "member"
+	},
+	{
+		"name": "Andrew Hudgins",
+		"type": "member"
+	},
+	{
+		"name": "Yunte Huang",
+		"type": "member"
+	},
+	{
+		"name": "Robert Huff",
+		"type": "member"
+	},
+	{
+		"name": "Langston Hughes",
+		"type": "member"
+	},
+	{
+		"name": "Richard Hugo",
+		"type": "member"
+	},
+	{
+		"name": "Christine Hume",
+		"type": "member"
+	},
+	{
+		"name": "T. R. Hummer",
+		"type": "member"
+	},
+	{
+		"name": "Erica Hunt",
+		"type": "member"
+	},
+	{
+		"name": "David Ignatow",
+		"type": "member"
+	},
+	{
+		"name": "Lawson Fusao Inada",
+		"type": "member"
+	},
+	{
+		"name": "P. Inman (Peter Inman)",
+		"type": "member"
+	},
+	{
+		"name": "Kenneth Irby",
+		"type": "member"
+	},
+	{
+		"name": "Josephine Jacobsen",
+		"type": "member"
+	},
+	{
+		"name": "Peter Jaeger",
+		"type": "member"
+	},
+	{
+		"name": "Elizabeth James",
+		"type": "member"
+	},
+	{
+		"name": "Thomas James",
+		"type": "member"
+	},
+	{
+		"name": "Ernst Jandl",
+		"type": "member"
+	},
+	{
+		"name": "Mark Jarman",
+		"type": "member"
+	},
+	{
+		"name": "Lisa Jarnot",
+		"type": "member"
+	},
+	{
+		"name": "Randall Jarrell",
+		"type": "member"
+	},
+	{
+		"name": "Elizabeth Jennings",
+		"type": "member"
+	},
+	{
+		"name": "Laura Jensen",
+		"type": "member"
+	},
+	{
+		"name": "Judson Jerome",
+		"type": "member"
+	},
+	{
+		"name": "Denis Johnson",
+		"type": "member"
+	},
+	{
+		"name": "Don Johnson",
+		"type": "member"
+	},
+	{
+		"name": "James Weldon Johnson",
+		"type": "member"
+	},
+	{
+		"name": "\"Raymond Edward \"\"Ray\"\" Johnson\"",
+		"type": "member"
+	},
+	{
+		"name": "Ronald Johnson",
+		"type": "member"
+	},
+	{
+		"name": "Rodney Jones",
+		"type": "member"
+	},
+	{
+		"name": "Erica Jong",
+		"type": "member"
+	},
+	{
+		"name": "A. Van Jordan",
+		"type": "member"
+	},
+	{
+		"name": "June Jordan",
+		"type": "member"
+	},
+	{
+		"name": "Andrew Joron",
+		"type": "member"
+	},
+	{
+		"name": "Allison Joseph",
+		"type": "member"
+	},
+	{
+		"name": "Donald Justice",
+		"type": "member"
+	},
+	{
+		"name": "Ilya Kaminsky",
+		"type": "member"
+	},
+	{
+		"name": "Bhanu Kapil",
+		"type": "member"
+	},
+	{
+		"name": "Laura Kasischke",
+		"type": "member"
+	},
+	{
+		"name": "Joy Katz",
+		"type": "member"
+	},
+	{
+		"name": "Ellen de Young Kay",
+		"type": "member"
+	},
+	{
+		"name": "Richard Katrovas",
+		"type": "member"
+	},
+	{
+		"name": "Claudia Keelan",
+		"type": "member"
+	},
+	{
+		"name": "Greg Keeler",
+		"type": "member"
+	},
+	{
+		"name": "Weldon Kees",
+		"type": "member"
+	},
+	{
+		"name": "Lenore Keeshit-Tobias",
+		"type": "member"
+	},
+	{
+		"name": "Robert Kelly",
+		"type": "member"
+	},
+	{
+		"name": "Dolores Kendrick",
+		"type": "member"
+	},
+	{
+		"name": "X. J. Kennedy",
+		"type": "member"
+	},
+	{
+		"name": "Jane Kenyon",
+		"type": "member"
+	},
+	{
+		"name": "Jack Kerouac",
+		"type": "member"
+	},
+	{
+		"name": "Faye Kicknosway",
+		"type": "member"
+	},
+	{
+		"name": "Myung Mi Kim",
+		"type": "member"
+	},
+	{
+		"name": "Suji Kwock Kim",
+		"type": "member"
+	},
+	{
+		"name": "Galway Kinnell",
+		"type": "member"
+	},
+	{
+		"name": "Thomas Kinsella",
+		"type": "member"
+	},
+	{
+		"name": "Mary Kinzie",
+		"type": "member"
+	},
+	{
+		"name": "Carolyn Kizer",
+		"type": "member"
+	},
+	{
+		"name": "Peter Klappert",
+		"type": "member"
+	},
+	{
+		"name": "August Kleinzahler",
+		"type": "member"
+	},
+	{
+		"name": "Etheridge Knight",
+		"type": "member"
+	},
+	{
+		"name": "Bill Knott (Saint Geraud)",
+		"type": "member"
+	},
+	{
+		"name": "Christopher Knowles",
+		"type": "member"
+	},
+	{
+		"name": "Caroline Knox",
+		"type": "member"
+	},
+	{
+		"name": "Kenneth Koch",
+		"type": "member"
+	},
+	{
+		"name": "Rodney Koeneke",
+		"type": "member"
+	},
+	{
+		"name": "Phyllis Koestenbaum",
+		"type": "member"
+	},
+	{
+		"name": "Sybil Kollar",
+		"type": "member"
+	},
+	{
+		"name": "Yusef Komunyakaa",
+		"type": "member"
+	},
+	{
+		"name": "Ted Kooser",
+		"type": "member"
+	},
+	{
+		"name": "Aaron Kramer",
+		"type": "member"
+	},
+	{
+		"name": "Judith Kroll",
+		"type": "member"
+	},
+	{
+		"name": "Maxine Kumin",
+		"type": "member"
+	},
+	{
+		"name": "Stanley Kunitz",
+		"type": "member"
+	},
+	{
+		"name": "Greg Kuzma",
+		"type": "member"
+	},
+	{
+		"name": "Joanne Kyger",
+		"type": "member"
+	},
+	{
+		"name": "Melvin Walker La Follette",
+		"type": "member"
+	},
+	{
+		"name": "Joan LaBombard",
+		"type": "member"
+	},
+	{
+		"name": "Philip Lamantia",
+		"type": "member"
+	},
+	{
+		"name": "Joseph Langland",
+		"type": "member"
+	},
+	{
+		"name": "Philip Larkin",
+		"type": "member"
+	},
+	{
+		"name": "Paul Lake",
+		"type": "member"
+	},
+	{
+		"name": "James Laughlin",
+		"type": "member"
+	},
+	{
+		"name": "Ann Lauterbach",
+		"type": "member"
+	},
+	{
+		"name": "Robert Layzer",
+		"type": "member"
+	},
+	{
+		"name": "Sydney Lea",
+		"type": "member"
+	},
+	{
+		"name": "Joseph Lease",
+		"type": "member"
+	},
+	{
+		"name": "Al Lee",
+		"type": "member"
+	},
+	{
+		"name": "Li-Young Lee",
+		"type": "member"
+	},
+	{
+		"name": "Barbara Lefcowitz",
+		"type": "member"
+	},
+	{
+		"name": "David Lehman",
+		"type": "member"
+	},
+	{
+		"name": "Leevi Lehto",
+		"type": "member"
+	},
+	{
+		"name": "Brad Leithauser",
+		"type": "member"
+	},
+	{
+		"name": "Ben Lerner",
+		"type": "member"
+	},
+	{
+		"name": "Rika Lesser",
+		"type": "member"
+	},
+	{
+		"name": "Denise Levertov",
+		"type": "member"
+	},
+	{
+		"name": "Dana Levin",
+		"type": "member"
+	},
+	{
+		"name": "Phillis Levin",
+		"type": "member"
+	},
+	{
+		"name": "Philip Levine",
+		"type": "member"
+	},
+	{
+		"name": "Fred Levinson",
+		"type": "member"
+	},
+	{
+		"name": "Larry Levis",
+		"type": "member"
+	},
+	{
+		"name": "Janet Lewis",
+		"type": "member"
+	},
+	{
+		"name": "Elizabeth Libbey",
+		"type": "member"
+	},
+	{
+		"name": "Tan Lin",
+		"type": "member"
+	},
+	{
+		"name": "Timothy Liu",
+		"type": "member"
+	},
+	{
+		"name": "John Logan",
+		"type": "member"
+	},
+	{
+		"name": "William Logan",
+		"type": "member"
+	},
+	{
+		"name": "Arrigo Lora-Totino",
+		"type": "member"
+	},
+	{
+		"name": "Audre Lorde",
+		"type": "member"
+	},
+	{
+		"name": "Robert Lowell",
+		"type": "member"
+	},
+	{
+		"name": "Susan Ludvigson",
+		"type": "member"
+	},
+	{
+		"name": "Thomas Lux",
+		"type": "member"
+	},
+	{
+		"name": "Karen Mac Cormack",
+		"type": "member"
+	},
+	{
+		"name": "Jackson Mac Low",
+		"type": "member"
+	},
+	{
+		"name": "Cynthia MacDonald",
+		"type": "member"
+	},
+	{
+		"name": "Nathaniel Mackey",
+		"type": "member"
+	},
+	{
+		"name": "Michael Magee",
+		"type": "member"
+	},
+	{
+		"name": "Gerald Malanga",
+		"type": "member"
+	},
+	{
+		"name": "Donato Mancini",
+		"type": "member"
+	},
+	{
+		"name": "Tom Mandel",
+		"type": "member"
+	},
+	{
+		"name": "Maurice Manning",
+		"type": "member"
+	},
+	{
+		"name": "Paul Mariani",
+		"type": "member"
+	},
+	{
+		"name": "Charles Martin",
+		"type": "member"
+	},
+	{
+		"name": "Valerie Martínez",
+		"type": "member"
+	},
+	{
+		"name": "David Mason",
+		"type": "member"
+	},
+	{
+		"name": "William Matchett",
+		"type": "member"
+	},
+	{
+		"name": "Harry Mathews",
+		"type": "member"
+	},
+	{
+		"name": "Cleopatra Mathis",
+		"type": "member"
+	},
+	{
+		"name": "Khaled Mattawa",
+		"type": "member"
+	},
+	{
+		"name": "William Matthews",
+		"type": "member"
+	},
+	{
+		"name": "Bernadette Mayer",
+		"type": "member"
+	},
+	{
+		"name": "Hansjörg Mayer",
+		"type": "member"
+	},
+	{
+		"name": "E. L. Mayo",
+		"type": "member"
+	},
+	{
+		"name": "Mekeel McBride",
+		"type": "member"
+	},
+	{
+		"name": "Angela McCabe",
+		"type": "member"
+	},
+	{
+		"name": "Steve McCaffery",
+		"type": "member"
+	},
+	{
+		"name": "Michael McClure",
+		"type": "member"
+	},
+	{
+		"name": "Howard McCord",
+		"type": "member"
+	},
+	{
+		"name": "David McElroy",
+		"type": "member"
+	},
+	{
+		"name": "Thomas McGrath",
+		"type": "member"
+	},
+	{
+		"name": "Medbh McGuckian",
+		"type": "member"
+	},
+	{
+		"name": "Heather McHugh",
+		"type": "member"
+	},
+	{
+		"name": "Stephen McLaughlin",
+		"type": "member"
+	},
+	{
+		"name": "James McMichael",
+		"type": "member"
+	},
+	{
+		"name": "Mark McMorris",
+		"type": "member"
+	},
+	{
+		"name": "Sandra McPherson",
+		"type": "member"
+	},
+	{
+		"name": "Joyelle McSweeney",
+		"type": "member"
+	},
+	{
+		"name": "Peter Meinke",
+		"type": "member"
+	},
+	{
+		"name": "David Meltzer",
+		"type": "member"
+	},
+	{
+		"name": "William Meredith",
+		"type": "member"
+	},
+	{
+		"name": "James Merrill",
+		"type": "member"
+	},
+	{
+		"name": "W. S. Merwin",
+		"type": "member"
+	},
+	{
+		"name": "Sharon Mesmer",
+		"type": "member"
+	},
+	{
+		"name": "Douglas Messerli",
+		"type": "member"
+	},
+	{
+		"name": "Robert Mezey",
+		"type": "member"
+	},
+	{
+		"name": "Josephine Miles",
+		"type": "member"
+	},
+	{
+		"name": "Edna St. Vincent Millay",
+		"type": "member"
+	},
+	{
+		"name": "Jane Miller",
+		"type": "member"
+	},
+	{
+		"name": "Vassar Miller",
+		"type": "member"
+	},
+	{
+		"name": "Carol Mirakove",
+		"type": "member"
+	},
+	{
+		"name": "Gary Miranda",
+		"type": "member"
+	},
+	{
+		"name": "Judith Moffett",
+		"type": "member"
+	},
+	{
+		"name": "K. Silem Mohammad",
+		"type": "member"
+	},
+	{
+		"name": "N. Scott Momaday",
+		"type": "member"
+	},
+	{
+		"name": "Franz Mon",
+		"type": "member"
+	},
+	{
+		"name": "Paul Monette",
+		"type": "member"
+	},
+	{
+		"name": "Leslie Monsour",
+		"type": "member"
+	},
+	{
+		"name": "Honor Moore",
+		"type": "member"
+	},
+	{
+		"name": "Richard Moore",
+		"type": "member"
+	},
+	{
+		"name": "Cherríe Moraga",
+		"type": "member"
+	},
+	{
+		"name": "Robert Morgan",
+		"type": "member"
+	},
+	{
+		"name": "Laura Moriarty",
+		"type": "member"
+	},
+	{
+		"name": "Hilda Morley",
+		"type": "member"
+	},
+	{
+		"name": "Tracie Morris",
+		"type": "member"
+	},
+	{
+		"name": "Rusty Morrison",
+		"type": "member"
+	},
+	{
+		"name": "Howard Moss",
+		"type": "member"
+	},
+	{
+		"name": "Stanley Moss",
+		"type": "member"
+	},
+	{
+		"name": "Fred Moten",
+		"type": "member"
+	},
+	{
+		"name": "Erin Mouré",
+		"type": "member"
+	},
+	{
+		"name": "Jennifer Moxley",
+		"type": "member"
+	},
+	{
+		"name": "Lisel Mueller",
+		"type": "member"
+	},
+	{
+		"name": "Paul Muldoon",
+		"type": "member"
+	},
+	{
+		"name": "Harryette Mullen",
+		"type": "member"
+	},
+	{
+		"name": "Laura Mullen",
+		"type": "member"
+	},
+	{
+		"name": "G. E. Murray",
+		"type": "member"
+	},
+	{
+		"name": "Les Murray",
+		"type": "member"
+	},
+	{
+		"name": "Carol Muske-Dukes",
+		"type": "member"
+	},
+	{
+		"name": "Jack Myers",
+		"type": "member"
+	},
+	{
+		"name": "Eileen Myles",
+		"type": "member"
+	},
+	{
+		"name": "Maurizio Nannucci",
+		"type": "member"
+	},
+	{
+		"name": "Melanie Neilson",
+		"type": "member"
+	},
+	{
+		"name": "Maggie Nelson",
+		"type": "member"
+	},
+	{
+		"name": "Marilyn Nelson",
+		"type": "member"
+	},
+	{
+		"name": "Howard Nemerov",
+		"type": "member"
+	},
+	{
+		"name": "bpNichol (Barrie Phillip Nichol)",
+		"type": "member"
+	},
+	{
+		"name": "Lorine Niedecker",
+		"type": "member"
+	},
+	{
+		"name": "Seiichi Niikuni",
+		"type": "member"
+	},
+	{
+		"name": "John Frederick Nims",
+		"type": "member"
+	},
+	{
+		"name": "Suzanne Noguere",
+		"type": "member"
+	},
+	{
+		"name": "Eiríkur Örn Norðdahl",
+		"type": "member"
+	},
+	{
+		"name": "Charles North",
+		"type": "member"
+	},
+	{
+		"name": "Alice Notley",
+		"type": "member"
+	},
+	{
+		"name": "Ladislav Novák",
+		"type": "member"
+	},
+	{
+		"name": "Mark Nowak",
+		"type": "member"
+	},
+	{
+		"name": "Naomi Shihab Nye",
+		"type": "member"
+	},
+	{
+		"name": "Frank O'Hara",
+		"type": "member"
+	},
+	{
+		"name": "Sharon Olds",
+		"type": "member"
+	},
+	{
+		"name": "Carole Oles",
+		"type": "member"
+	},
+	{
+		"name": "Mary Oliver",
+		"type": "member"
+	},
+	{
+		"name": "Redell Olsen",
+		"type": "member"
+	},
+	{
+		"name": "Charles Olson",
+		"type": "member"
+	},
+	{
+		"name": "Yoko Ono",
+		"type": "member"
+	},
+	{
+		"name": "George Oppen",
+		"type": "member"
+	},
+	{
+		"name": "Steve Orlen",
+		"type": "member"
+	},
+	{
+		"name": "Gregory Orr",
+		"type": "member"
+	},
+	{
+		"name": "Simon J. Ortiz",
+		"type": "member"
+	},
+	{
+		"name": "Maggie O'Sullivan",
+		"type": "member"
+	},
+	{
+		"name": "Maureen Owen",
+		"type": "member"
+	},
+	{
+		"name": "Rochelle Owens",
+		"type": "member"
+	},
+	{
+		"name": "Robert Pack",
+		"type": "member"
+	},
+	{
+		"name": "Ron Padgett",
+		"type": "member"
+	},
+	{
+		"name": "Nam June Paik",
+		"type": "member"
+	},
+	{
+		"name": "Grace Paley",
+		"type": "member"
+	},
+	{
+		"name": "Michael Palmer",
+		"type": "member"
+	},
+	{
+		"name": "Greg Pape",
+		"type": "member"
+	},
+	{
+		"name": "Jay Parini",
+		"type": "member"
+	},
+	{
+		"name": "Elsie Paschen",
+		"type": "member"
+	},
+	{
+		"name": "Linda Pastan",
+		"type": "member"
+	},
+	{
+		"name": "Kenneth Patchen",
+		"type": "member"
+	},
+	{
+		"name": "Julie Patton",
+		"type": "member"
+	},
+	{
+		"name": "Molly Peacock",
+		"type": "member"
+	},
+	{
+		"name": "John Peck",
+		"type": "member"
+	},
+	{
+		"name": "Georges Perec",
+		"type": "member"
+	},
+	{
+		"name": "Bob Perelman",
+		"type": "member"
+	},
+	{
+		"name": "Craig Santos Perez",
+		"type": "member"
+	},
+	{
+		"name": "John Perreault",
+		"type": "member"
+	},
+	{
+		"name": "Michael Pettit",
+		"type": "member"
+	},
+	{
+		"name": "M. Nourbese Philip",
+		"type": "member"
+	},
+	{
+		"name": "Marge Piercy",
+		"type": "member"
+	},
+	{
+		"name": "Helen Pinkerton",
+		"type": "member"
+	},
+	{
+		"name": "Robert Pinsky",
+		"type": "member"
+	},
+	{
+		"name": "Nick Piombino",
+		"type": "member"
+	},
+	{
+		"name": "Vanessa Place",
+		"type": "member"
+	},
+	{
+		"name": "Sylvia Plath",
+		"type": "member"
+	},
+	{
+		"name": "Stanley Plumly",
+		"type": "member"
+	},
+	{
+		"name": "Hyam Plutzik",
+		"type": "member"
+	},
+	{
+		"name": "Katha Pollitt",
+		"type": "member"
+	},
+	{
+		"name": "Bern Porter",
+		"type": "member"
+	},
+	{
+		"name": "Ezra Pound",
+		"type": "member"
+	},
+	{
+		"name": "D. A. Powell",
+		"type": "member"
+	},
+	{
+		"name": "Larry Price",
+		"type": "member"
+	},
+	{
+		"name": "Wyatt Prunty",
+		"type": "member"
+	},
+	{
+		"name": "Raymond Queneau",
+		"type": "member"
+	},
+	{
+		"name": "Lawrence Raab",
+		"type": "member"
+	},
+	{
+		"name": "Thomas Rabbitt",
+		"type": "member"
+	},
+	{
+		"name": "Carl Rakosi",
+		"type": "member"
+	},
+	{
+		"name": "A. K. Ramanujan",
+		"type": "member"
+	},
+	{
+		"name": "Bin Ramke",
+		"type": "member"
+	},
+	{
+		"name": "Dudley Randall",
+		"type": "member"
+	},
+	{
+		"name": "Paula Rankin",
+		"type": "member"
+	},
+	{
+		"name": "Claudia Rankine",
+		"type": "member"
+	},
+	{
+		"name": "Stephen Ratcliffe",
+		"type": "member"
+	},
+	{
+		"name": "Tom Raworth",
+		"type": "member"
+	},
+	{
+		"name": "David Ray",
+		"type": "member"
+	},
+	{
+		"name": "Srikanth Reddy",
+		"type": "member"
+	},
+	{
+		"name": "Ishmael Reed",
+		"type": "member"
+	},
+	{
+		"name": "Alastair Reid",
+		"type": "member"
+	},
+	{
+		"name": "Ariana Reines",
+		"type": "member"
+	},
+	{
+		"name": "James Reiss",
+		"type": "member"
+	},
+	{
+		"name": "Naomi Replansky",
+		"type": "member"
+	},
+	{
+		"name": "Joan Retallack",
+		"type": "member"
+	},
+	{
+		"name": "Donald Revell",
+		"type": "member"
+	},
+	{
+		"name": "Charles Reznikoff",
+		"type": "member"
+	},
+	{
+		"name": "Adrienne Rich",
+		"type": "member"
+	},
+	{
+		"name": "Deborah Richards",
+		"type": "member"
+	},
+	{
+		"name": "John Ridland",
+		"type": "member"
+	},
+	{
+		"name": "Alberto Álvaro Ríos",
+		"type": "member"
+	},
+	{
+		"name": "Ed Roberson",
+		"type": "member"
+	},
+	{
+		"name": "Lisa Robertson",
+		"type": "member"
+	},
+	{
+		"name": "Elizabeth Robinson",
+		"type": "member"
+	},
+	{
+		"name": "Kit Robinson",
+		"type": "member"
+	},
+	{
+		"name": "Stephen Rodefer",
+		"type": "member"
+	},
+	{
+		"name": "Theodore Roethke",
+		"type": "member"
+	},
+	{
+		"name": "Pattiann Rogers",
+		"type": "member"
+	},
+	{
+		"name": "Matthew Rohrer",
+		"type": "member"
+	},
+	{
+		"name": "William Pitt Root",
+		"type": "member"
+	},
+	{
+		"name": "Raymond Roseliep",
+		"type": "member"
+	},
+	{
+		"name": "Kenneth Rosen",
+		"type": "member"
+	},
+	{
+		"name": "Michael J. Rosen",
+		"type": "member"
+	},
+	{
+		"name": "Kim Rosenfield",
+		"type": "member"
+	},
+	{
+		"name": "Dieter Roth",
+		"type": "member"
+	},
+	{
+		"name": "Jerome Rothenberg",
+		"type": "member"
+	},
+	{
+		"name": "Gibbons Ruark",
+		"type": "member"
+	},
+	{
+		"name": "Mary Ruefle",
+		"type": "member"
+	},
+	{
+		"name": "Gerhard Rühm",
+		"type": "member"
+	},
+	{
+		"name": "Muriel Rukeyser",
+		"type": "member"
+	},
+	{
+		"name": "Michael Ryan",
+		"type": "member"
+	},
+	{
+		"name": "Ira Sadoff",
+		"type": "member"
+	},
+	{
+		"name": "Mary Jo Salter",
+		"type": "member"
+	},
+	{
+		"name": "Lisa Samuels",
+		"type": "member"
+	},
+	{
+		"name": "Sonia Sanchez",
+		"type": "member"
+	},
+	{
+		"name": "Kaia Sand",
+		"type": "member"
+	},
+	{
+		"name": "Sherod Santos",
+		"type": "member"
+	},
+	{
+		"name": "Aram Saroyan",
+		"type": "member"
+	},
+	{
+		"name": "May Sarton",
+		"type": "member"
+	},
+	{
+		"name": "Leslie Scalapino",
+		"type": "member"
+	},
+	{
+		"name": "Susan Fromberg Schaeffer",
+		"type": "member"
+	},
+	{
+		"name": "Roy Scheele",
+		"type": "member"
+	},
+	{
+		"name": "James Schevill",
+		"type": "member"
+	},
+	{
+		"name": "Dennis Schmitz",
+		"type": "member"
+	},
+	{
+		"name": "Gjertrud Schnackenberg",
+		"type": "member"
+	},
+	{
+		"name": "Philip Schultz",
+		"type": "member"
+	},
+	{
+		"name": "Susan M. Schultz",
+		"type": "member"
+	},
+	{
+		"name": "James Schuyler",
+		"type": "member"
+	},
+	{
+		"name": "Delmore Schwartz",
+		"type": "member"
+	},
+	{
+		"name": "Gail Scott",
+		"type": "member"
+	},
+	{
+		"name": "Winfield Townley Scott",
+		"type": "member"
+	},
+	{
+		"name": "Maureen Seaton",
+		"type": "member"
+	},
+	{
+		"name": "Peter Seaton",
+		"type": "member"
+	},
+	{
+		"name": "Hugh Seidman",
+		"type": "member"
+	},
+	{
+		"name": "Anne Sexton",
+		"type": "member"
+	},
+	{
+		"name": "Alan Shapiro",
+		"type": "member"
+	},
+	{
+		"name": "David Shapiro",
+		"type": "member"
+	},
+	{
+		"name": "Karl Shapiro",
+		"type": "member"
+	},
+	{
+		"name": "Brenda Shaughnessy",
+		"type": "member"
+	},
+	{
+		"name": "James Sherry",
+		"type": "member"
+	},
+	{
+		"name": "Judith Johnson Sherwin",
+		"type": "member"
+	},
+	{
+		"name": "Aaron Shurin",
+		"type": "member"
+	},
+	{
+		"name": "Eleni Sikelianos",
+		"type": "member"
+	},
+	{
+		"name": "Richard Siken",
+		"type": "member"
+	},
+	{
+		"name": "Jon Silkin",
+		"type": "member"
+	},
+	{
+		"name": "Leslie Marmon Silko",
+		"type": "member"
+	},
+	{
+		"name": "Ron Silliman",
+		"type": "member"
+	},
+	{
+		"name": "Charles Simic",
+		"type": "member"
+	},
+	{
+		"name": "Maurya Simon",
+		"type": "member"
+	},
+	{
+		"name": "Leslie Simon",
+		"type": "member"
+	},
+	{
+		"name": "Louis Simpson",
+		"type": "member"
+	},
+	{
+		"name": "L. E. Sissman",
+		"type": "member"
+	},
+	{
+		"name": "Knute Skinner",
+		"type": "member"
+	},
+	{
+		"name": "Floyd Skloot",
+		"type": "member"
+	},
+	{
+		"name": "David R. Slavitt",
+		"type": "member"
+	},
+	{
+		"name": "Patricia Smith",
+		"type": "member"
+	},
+	{
+		"name": "Dave Smith",
+		"type": "member"
+	},
+	{
+		"name": "Rod Smith",
+		"type": "member"
+	},
+	{
+		"name": "Tracy K. Smith",
+		"type": "member"
+	},
+	{
+		"name": "William Jay Smith",
+		"type": "member"
+	},
+	{
+		"name": "W. D. Snodgrass",
+		"type": "member"
+	},
+	{
+		"name": "Gary Snyder",
+		"type": "member"
+	},
+	{
+		"name": "Gustaf Sobin",
+		"type": "member"
+	},
+	{
+		"name": "Cathy Song",
+		"type": "member"
+	},
+	{
+		"name": "Gary Soto",
+		"type": "member"
+	},
+	{
+		"name": "Marcia Southwick",
+		"type": "member"
+	},
+	{
+		"name": "Barry Spacks",
+		"type": "member"
+	},
+	{
+		"name": "Juliana Spahr",
+		"type": "member"
+	},
+	{
+		"name": "Adriano Spatola",
+		"type": "member"
+	},
+	{
+		"name": "Roberta Spear",
+		"type": "member"
+	},
+	{
+		"name": "Jack Spicer",
+		"type": "member"
+	},
+	{
+		"name": "Elizabeth Spires",
+		"type": "member"
+	},
+	{
+		"name": "Kathleen Spivack",
+		"type": "member"
+	},
+	{
+		"name": "David St. John",
+		"type": "member"
+	},
+	{
+		"name": "William Stafford",
+		"type": "member"
+	},
+	{
+		"name": "Maura Stanton",
+		"type": "member"
+	},
+	{
+		"name": "George Starbuck",
+		"type": "member"
+	},
+	{
+		"name": "Timothy Steele",
+		"type": "member"
+	},
+	{
+		"name": "Brian Kim Stefans",
+		"type": "member"
+	},
+	{
+		"name": "Gertrude Stein",
+		"type": "member"
+	},
+	{
+		"name": "Barry Sternlieb",
+		"type": "member"
+	},
+	{
+		"name": "Wallace Stevens",
+		"type": "member"
+	},
+	{
+		"name": "Anne Stevenson",
+		"type": "member"
+	},
+	{
+		"name": "Susan Stewart",
+		"type": "member"
+	},
+	{
+		"name": "Terry Stokes",
+		"type": "member"
+	},
+	{
+		"name": "Leon Stokesbury",
+		"type": "member"
+	},
+	{
+		"name": "Patricia Storace",
+		"type": "member"
+	},
+	{
+		"name": "Ruth Stone",
+		"type": "member"
+	},
+	{
+		"name": "Mark Strand",
+		"type": "member"
+	},
+	{
+		"name": "Dabney Stuart",
+		"type": "member"
+	},
+	{
+		"name": "Gary Sullivan",
+		"type": "member"
+	},
+	{
+		"name": "Barton Sutter",
+		"type": "member"
+	},
+	{
+		"name": "Brian Swann",
+		"type": "member"
+	},
+	{
+		"name": "Cole Swensen",
+		"type": "member"
+	},
+	{
+		"name": "May Swenson",
+		"type": "member"
+	},
+	{
+		"name": "Joan Swift",
+		"type": "member"
+	},
+	{
+		"name": "Janet Sylvester",
+		"type": "member"
+	},
+	{
+		"name": "John Taggart",
+		"type": "member"
+	},
+	{
+		"name": "Nathaniel Tarn",
+		"type": "member"
+	},
+	{
+		"name": "James Tate",
+		"type": "member"
+	},
+	{
+		"name": "Henry Taylor",
+		"type": "member"
+	},
+	{
+		"name": "Brian Teare",
+		"type": "member"
+	},
+	{
+		"name": "Roberto Tejada",
+		"type": "member"
+	},
+	{
+		"name": "Fiona Templeton",
+		"type": "member"
+	},
+	{
+		"name": "Lorenzo Thomas",
+		"type": "member"
+	},
+	{
+		"name": "Susan Tichy",
+		"type": "member"
+	},
+	{
+		"name": "Richard Tillinghast",
+		"type": "member"
+	},
+	{
+		"name": "Charles Tomlinson",
+		"type": "member"
+	},
+	{
+		"name": "Edwin Torres",
+		"type": "member"
+	},
+	{
+		"name": "Rodrigo Toscano",
+		"type": "member"
+	},
+	{
+		"name": "Tony Towle",
+		"type": "member"
+	},
+	{
+		"name": "Wesley Trimpi",
+		"type": "member"
+	},
+	{
+		"name": "Quincy Troupe",
+		"type": "member"
+	},
+	{
+		"name": "Lewis Turco",
+		"type": "member"
+	},
+	{
+		"name": "Frederick Turner",
+		"type": "member"
+	},
+	{
+		"name": "Chase Twichell",
+		"type": "member"
+	},
+	{
+		"name": "Tristan Tzara",
+		"type": "member"
+	},
+	{
+		"name": "John Updike",
+		"type": "member"
+	},
+	{
+		"name": "Jean Valentine",
+		"type": "member"
+	},
+	{
+		"name": "Mona Van Duyn",
+		"type": "member"
+	},
+	{
+		"name": "Cecilia Vicuña",
+		"type": "member"
+	},
+	{
+		"name": "Peter Viereck",
+		"type": "member"
+	},
+	{
+		"name": "Alma Luz Villanueva",
+		"type": "member"
+	},
+	{
+		"name": "Paul Violi",
+		"type": "member"
+	},
+	{
+		"name": "Ellen Bryant Voigt",
+		"type": "member"
+	},
+	{
+		"name": "Arthur Vogelsang",
+		"type": "member"
+	},
+	{
+		"name": "Paul de Vree",
+		"type": "member"
+	},
+	{
+		"name": "David Wagoner",
+		"type": "member"
+	},
+	{
+		"name": "Diane Wakoski",
+		"type": "member"
+	},
+	{
+		"name": "Derek Walcott",
+		"type": "member"
+	},
+	{
+		"name": "Anne Waldman",
+		"type": "member"
+	},
+	{
+		"name": "G. C. Waldrep",
+		"type": "member"
+	},
+	{
+		"name": "Keith Waldrop",
+		"type": "member"
+	},
+	{
+		"name": "Rosmarie Waldrop",
+		"type": "member"
+	},
+	{
+		"name": "Alice Walker",
+		"type": "member"
+	},
+	{
+		"name": "Ronald Wallace",
+		"type": "member"
+	},
+	{
+		"name": "Marilyn N. Waniek",
+		"type": "member"
+	},
+	{
+		"name": "Diane Ward",
+		"type": "member"
+	},
+	{
+		"name": "Candice Warne",
+		"type": "member"
+	},
+	{
+		"name": "Robert Penn Warren",
+		"type": "member"
+	},
+	{
+		"name": "Rosanna Warren",
+		"type": "member"
+	},
+	{
+		"name": "Lewis Warsh",
+		"type": "member"
+	},
+	{
+		"name": "Michael Waters",
+		"type": "member"
+	},
+	{
+		"name": "Barrett Watten",
+		"type": "member"
+	},
+	{
+		"name": "Tom Weatherly",
+		"type": "member"
+	},
+	{
+		"name": "Roger Weingarten",
+		"type": "member"
+	},
+	{
+		"name": "Bruce Weigl",
+		"type": "member"
+	},
+	{
+		"name": "Hannah Weiner",
+		"type": "member"
+	},
+	{
+		"name": "James Welch",
+		"type": "member"
+	},
+	{
+		"name": "Lew Welch",
+		"type": "member"
+	},
+	{
+		"name": "Marjorie Welish",
+		"type": "member"
+	},
+	{
+		"name": "Mac Wellman",
+		"type": "member"
+	},
+	{
+		"name": "Darren Wershler",
+		"type": "member"
+	},
+	{
+		"name": "Kathleene West",
+		"type": "member"
+	},
+	{
+		"name": "Mildred Weston",
+		"type": "member"
+	},
+	{
+		"name": "Rachel Wetzsteon",
+		"type": "member"
+	},
+	{
+		"name": "Philip Whalen",
+		"type": "member"
+	},
+	{
+		"name": "Gail White",
+		"type": "member"
+	},
+	{
+		"name": "Jon Manchip White",
+		"type": "member"
+	},
+	{
+		"name": "James Whitehead",
+		"type": "member"
+	},
+	{
+		"name": "Carolyn B. Whitlow",
+		"type": "member"
+	},
+	{
+		"name": "Ruth Whitman",
+		"type": "member"
+	},
+	{
+		"name": "Reed Whittemore",
+		"type": "member"
+	},
+	{
+		"name": "John Wieners",
+		"type": "member"
+	},
+	{
+		"name": "Dara Wier",
+		"type": "member"
+	},
+	{
+		"name": "Richard Wilbur",
+		"type": "member"
+	},
+	{
+		"name": "Peter Wild",
+		"type": "member"
+	},
+	{
+		"name": "Joshua Marie Wilkinson",
+		"type": "member"
+	},
+	{
+		"name": "Nancy Willard",
+		"type": "member"
+	},
+	{
+		"name": "C. K. Williams",
+		"type": "member"
+	},
+	{
+		"name": "Emmett Williams",
+		"type": "member"
+	},
+	{
+		"name": "John A. Williams",
+		"type": "member"
+	},
+	{
+		"name": "Jonathan Williams",
+		"type": "member"
+	},
+	{
+		"name": "Lisa Williams",
+		"type": "member"
+	},
+	{
+		"name": "Miller Williams",
+		"type": "member"
+	},
+	{
+		"name": "William Carlos Williams",
+		"type": "member"
+	},
+	{
+		"name": "Greg Williamson",
+		"type": "member"
+	},
+	{
+		"name": "Elizabeth Willis",
+		"type": "member"
+	},
+	{
+		"name": "Sara Wintz",
+		"type": "member"
+	},
+	{
+		"name": "Harold Witt",
+		"type": "member"
+	},
+	{
+		"name": "David Wojahn",
+		"type": "member"
+	},
+	{
+		"name": "Daniel Wolff",
+		"type": "member"
+	},
+	{
+		"name": "Nellie Wong",
+		"type": "member"
+	},
+	{
+		"name": "Baron Wormser",
+		"type": "member"
+	},
+	{
+		"name": "C. D. Wright",
+		"type": "member"
+	},
+	{
+		"name": "Celeste T. Wright",
+		"type": "member"
+	},
+	{
+		"name": "Charles Wright",
+		"type": "member"
+	},
+	{
+		"name": "James Wright",
+		"type": "member"
+	},
+	{
+		"name": "Jay Wright",
+		"type": "member"
+	},
+	{
+		"name": "Mark Wunderlich",
+		"type": "member"
+	},
+	{
+		"name": "John Yau",
+		"type": "member"
+	},
+	{
+		"name": "William Butler Yeats",
+		"type": "member"
+	},
+	{
+		"name": "Monica Youn",
+		"type": "member"
+	},
+	{
+		"name": "Al Young",
+		"type": "member"
+	},
+	{
+		"name": "David Young",
+		"type": "member"
+	},
+	{
+		"name": "Dean Young",
+		"type": "member"
+	},
+	{
+		"name": "Kevin Young",
+		"type": "member"
+	},
+	{
+		"name": "La Monte Young",
+		"type": "member"
+	},
+	{
+		"name": "Matthew Zapruder",
+		"type": "member"
+	},
+	{
+		"name": "Andrew Zawacki",
+		"type": "member"
+	},
+	{
+		"name": "Lisa Zeidner",
+		"type": "member"
+	},
+	{
+		"name": "Paul Zimmer",
+		"type": "member"
+	},
+	{
+		"name": "Rachel Zucker",
+		"type": "member"
+	},
+	{
+		"name": "Louis Zukofsky",
+		"type": "member"
+	},
+	{
+		"name": "UbuWeb",
+		"type": "Institution"
+	},
+	{
+		"name": "PennSound",
+		"type": "Institution"
+	},
+	{
+		"name": "voca",
+		"type": "Institution"
+	},
+	{
+		"name": "Smith_The Morrow Anthology_1985",
+		"type": "Institution"
+	},
+	{
+		"name": "Halpern_The New Poetry Anthology_1975",
+		"type": "Institution"
+	},
+	{
+		"name": "Finch_A Formal Feeling Comes_1994",
+		"type": "Institution"
+	},
+	{
+		"name": "Jarman_Rebel Angels_1996",
+		"type": "Institution"
+	},
+	{
+		"name": "Elliston",
+		"type": "Institution"
+	},
+	{
+		"name": "Hall_New Poets of England and America_1957",
+		"type": "Institution"
+	},
+	{
+		"name": "McClatchy_Contemporary American Poetry_1990",
+		"type": "Institution"
+	},
+	{
+		"name": "Vendler_Contemporary American Poetry_1985",
+		"type": "Institution"
+	},
+	{
+		"name": "Dacey_Strong Measures_1986",
+		"type": "Institution"
+	},
+	{
+		"name": "Ciardi_Mid-Century American Poets_1950",
+		"type": "Institution"
+	},
+	{
+		"name": "Elliott_Fifteen Modern American Poets_1956",
+		"type": "Institution"
+	}
+]
