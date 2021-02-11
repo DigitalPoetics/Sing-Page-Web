@@ -11,8 +11,6 @@
 
 
         const ctx = wavesurfer.drawer.canvases[0].waveCtx;
-
-
   
 
         fetch("https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/WCWsomuch.csv")

@@ -27,15 +27,7 @@ td.wavesurfer-tier-Comments {
     background-color: #c9e2b3;
 }
 
-.diagram {
-    width: 600px;
-    height: 550px;
-    position: relative;
-    margin-left: 100px;
-    border: 1px solid #555;
-    padding-left: 100px;
-    overflow-x: auto;
-}
+
 
 /**** network ***/
 
@@ -44,6 +36,72 @@ td.wavesurfer-tier-Comments {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
+/**** pitch ****/
+
+.diagram {
+    width: 550px;
+    height: 550px;
+    position: relative;
+    margin-left: 300px;
+    border: 1px solid #555;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 10px;
+    background-color: #f7f7f7;
+}
+
+
+path.line{
+    stroke: black;
+    stroke-width: 1px;
+    fill: none;
+    display: none;
+  }
+  
+  circle.pitchpoint{
+    stroke: blue;
+    stroke-width: 1px;
+    fill: blue;
+  }
+
+.waveBox {
+    height: 400px !important;
+    background-color: lightcyan;
+
+}
+
+wave > canvas {
+    border: 1px solid #555;
+}
+
+.pitchD3 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.y-axis {
+    overflow: visible !important;
+    margin-left: -5px;
+}
+
+.y-label {
+    overflow: visible !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

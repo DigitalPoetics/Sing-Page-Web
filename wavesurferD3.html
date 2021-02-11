@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Diagrammatic Readings</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- bootstrap -->	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!-- main wavesurfer.js lib -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/wavesurfer.min.js"></script>
+
+
+	<!-- spectrogram format renderer -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.spectrogram.min.js"></script>
+	 
+	 <!-- elan transcript renderer -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.elan.min.js"></script>
+	 
+	 <!--minimap -->
+	 <script src='https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.minimap.min.js'></script>
+
+	<!-- wavesurfer.js regions -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.regions.min.js"></script>	
+	
+	<!-- timeline -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/plugin/wavesurfer.timeline.min.js"></script>
+
+	<!-- Load d3.js -->
+    <script type="text/javascript" src="d3.v4.js"></script> 
+
+	<!-- Load Chart.js and papaparse.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script Src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.0/papaparse.min.js"></script>
+	
+
+	
+  </head>
+  <body>
+
+
+<article> 	
+    <h1>Diagrammatic Readings</h1>
+
+
+
+<div id="audioBox" class="diagram">
+
+	<div id="wave-timeline"></div>    
+
+	<div id="waveform">
+		<track src="WCWsomuch.vtt" kind="captions" srclang="en" label="English">
+	</div>
+
+	<div id="y-axis"></div>
+
+
+
+
+
+
+
+
+
+	<div style="text-align: center; padding-right: 60px; margin-top: -150px;">
+		<button class="btn btn-primary" onclick="wavesurfer.playPause()">
+			<i class="glyphicon glyphicon-play"></i>
+							Play/Pause
+		</button>
+
+		<p class="row">
+			<div class="col-xs-1">
+				<i class="glyphicon glyphicon-zoom-in"></i>
+			</div>
+
+			<div class="col-xs-10">
+				<input id="slider" type="range" min="1" max="200" value="1" style="width: 100%" />
+			</div>
+		  
+			<div class="col-xs-1">
+				<i class="glyphicon glyphicon-zoom-out"></i>
+			</div>
+		</p>		
+	</div>
+
+</div>
+
+	<div id="annotations"></div>
+
+
+
+    <script type="text/javascript" src="pitchD3.js"></script>
+
+	<script>
+
+	var wavesurfer = WaveSurfer.create({
+		container: document.querySelector('#waveform'),
+		progressColor: "black",
+		waveColor: 'gray',
+		backgroundColor: '#fcfcfc',
+		loop: true,
+		scrollParent: true,
+		mediaControls: true,		
+		minPxPerSec: 75,
+		hideScrollbar: false,
+		renderer: 'MultiCanvas',
+        height: 64
+	});	
+
+
+		
+	wavesurfer.on('ready', function () {
+		wavesurfer.addRegion({
+		start: 2,
+		end: 5,
+		color: 'hsla(180,100%,50%, 0.3)'
+		});
+	});
+	
+	wavesurfer.on('ready', function () {
+		var timeline = Object.create(WaveSurfer.Timeline);
+		timeline.init({
+			wavesurfer: wavesurfer,
+			container: "#wave-timeline"
+		});
+	});	
+
+
+
+
+/*	wavesurfer.on('ready', function() {
+		wavesurfer.drawer.canvases[0].wave.style.zIndex = 2;
+	}); */
+	
+	wavesurfer.on('ready', function () {
+		var elan = Object.create(WaveSurfer.Elan);
+		elan.init({
+			wavesurfer: wavesurfer,
+			url: 'https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/001z.xml',
+			container: "#annotations",
+			tiers: {
+				Text: true,
+				Comments: false
+			}			
+		});
+	});
+	
+	wavesurfer.load('https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/WCWsomuch.mp3');
+
+	var slider = document.querySelector('#slider');
+
+	slider.oninput = function () {
+  		var zoomLevel = Number(slider.value);
+  		wavesurfer.zoom(zoomLevel); 
+	};
+
+	</script>
+
+	<script>
+		$.get('WCWsomuch.vtt', function(data) {
+     
+     // Read all captions into an array
+     var items = data.split('\n\r\n');
+     
+     console.log(items);
+    
+     //Loop through all captions
+     $.each(items, function( index, value ) {
+      
+      var item = items[index].split('\n');
+      console.log(item);    
+
+      });
+ });
+	</script>
+
+
+
+
+
+
+
+
+
+	
+
+
+
+</article>
+
+
+
+
+  </body>
+</html>
