@@ -198,7 +198,7 @@ function fontSize (d){
     if(d.type == "member"){          //edges type
         return d.linkCount ? (d.linkCount + 5) * 1 : 1;
     } else {
-        return d.linkCount ? d.linkCount * 0.15 : 2; //alternatively "(d.linkCount < 5) ? d.linkCount * 3 : d.linkCount * .3"
+        return d.linkCount ? (d.linkCount + 10) * 0.20 : 2; // d.linkCount ? d.linkCount * 0.15 : 2; //alternatively "(d.linkCount < 5) ? d.linkCount * 3 : d.linkCount * .3"
     }
 }
 
