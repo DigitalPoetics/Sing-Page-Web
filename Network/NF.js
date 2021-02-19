@@ -45,7 +45,7 @@ var link_force =  d3.forceLink(links_data)
 					.strength(.50);            
          
 var charge_force = d3.forceManyBody()
-    				  .strength(-300)
+    				  .strength(-400)
     				  .distanceMax(400); 
     
 var center_force = d3.forceCenter(w / 2, h / 2);  //width "w" and height "h"
@@ -146,7 +146,7 @@ var node = g.append("g")
             .style("stroke-opacity", 0.5)
             .style("fill-opacity", 1)
             .style("fill", circleColour) //circlecolor
-			.on('dblclick', connectedNodes); 
+			.on('dblclick', connectedNodes); //double click function
             
 
 //draw text for the labels
@@ -160,11 +160,11 @@ var text = g.append("g")
             .text(function(d) {return d.name;})  
 			.attr("text-anchor", "middle")
 			.attr("font-family", "Helvetica")
-            .style("font-weight", 100)
+            .style("font-weight", 10)
             .style("pointer-events", "none")
             .style("fill", "black")
             .style("stroke", "black")
-            .style("stroke-width", 0.25)
+            .style("stroke-width", 0.10)
             .attr('dominant-baseline','middle');
  
  
@@ -196,18 +196,18 @@ function circleColour(d){
 
 function fontSize (d){
     if(d.type == "member"){          //edges type
-        return (d.linkCount < 3) ? d.linkCount * 3 : d.linkCount * 1.5;
+        return d.linkCount ? (d.linkCount + 5) * 1 : 1;
     } else {
-        return d.linkCount ? d.linkCount * 0.2 : 2; //alternatively "(d.linkCount < 5) ? d.linkCount * 3 : d.linkCount * .3"
+        return d.linkCount ? d.linkCount * 0.15 : 2; //alternatively "(d.linkCount < 5) ? d.linkCount * 3 : d.linkCount * .3"
     }
 }
 
 //node size depending on the two groups
 function nodeSize (d){
     if(d.type == "member"){          //edges type
-        return (d.linkCount < 3) ? d.linkCount * 3 : d.linkCount * 1.5;
+        return d.linkCount ? (d.linkCount + 4) * 1 : 2; // (d.linkCount < 3) ? d.linkCount * 3 : d.linkCount * 1.5;
     } else {
-        return d.linkCount ? d.linkCount * 0.2 : 5; //alternatively "(d.linkCount < 5) ? d.linkCount * 3 : d.linkCount * .3"
+        return d.linkCount ? (d.linkCount + 5) * 0.2 : 2; // d.linkCount ? d.linkCount * 0.2 : 5; //alternatively "(d.linkCount < 5) ? d.linkCount * 3 : d.linkCount * .3"
     }
 }
 
