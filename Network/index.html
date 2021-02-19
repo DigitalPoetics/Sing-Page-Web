@@ -8,7 +8,8 @@
 
  	  <!-- Load d3.js -->
     <script type="text/javascript" src="d3.v4.js"></script>
-    
+
+   
 
 
   </head>
@@ -17,6 +18,14 @@
     <!-- Network diagram -->
     <div id="network" class="networkdiagram">
 	    <script type="text/javascript" src="NF.js"></script>
+    </div>
+
+    <!-- input box for gene search -->
+    <div id='poet_search_container' class='row'>
+      <div class="ui-widget">
+        <input id="search" size='30'>
+        <button type="button" onclick="searchNode()">Find Node</button>
+      </div>
     </div>
 
   </body>

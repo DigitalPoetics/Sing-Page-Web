@@ -1,4 +1,288 @@
 
+//get the json files (or use the arrays at the bottom)
+d3.queue()
+	.defer(d3.json, "https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/Network/nfnodes.json")
+	.defer(d3.json, "https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/Network/nflink.json")
+	.await(function(error, nodes_data, links_data) {
+	if (error) throw error;
+	console.log(nodes_data);
+	console.log(links_data);
+
+//Width and height
+var w = 900;
+var h = 600;
+var padding = 20;
+var border=1;
+var bordercolor='black';
+
+//create somewhere to put the force directed graph
+var svg = d3.select("#network")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h)
+            .attr("border", border);
+
+//border
+var borderPath = svg.append("rect")
+                    .attr("x", 0)
+                    .attr("y", 0)
+                    .attr("height", h)
+                    .attr("width", w)
+                    .style("stroke", bordercolor)
+                    .style("fill", "#f0f0f0")
+                    .style("stroke-width", border);
+    
+var radius = 5; 
+
+
+//set up the simulation and add forces  
+var simulation = d3.forceSimulation()
+                    .nodes(nodes_data);
+                              
+var link_force =  d3.forceLink(links_data)
+                    .id(function(d) { return d.name; })
+					.distance(25)
+					.strength(.50);            
+         
+var charge_force = d3.forceManyBody()
+    				  .strength(-300)
+    				  .distanceMax(400); 
+    
+var center_force = d3.forceCenter(w / 2, h / 2);  //width "w" and height "h"
+
+var collision_force = d3.forceCollide().radius(15);
+                      
+simulation
+    .force("charge_force", charge_force)
+    .force("center_force", center_force)
+	.force("collision_force", collision_force)
+    .force("links", link_force);
+
+        
+//add tick instructions: 
+simulation.on("tick", tickActions );
+
+
+//degree 
+links_data.forEach(function(link){
+
+    if (!link.source["linkCount"]) link.source["linkCount"] = 0; 
+    if (!link.target["linkCount"]) link.target["linkCount"] = 0;
+    
+    link.source["linkCount"]++;
+    link.target["linkCount"]++;
+    
+  });
+
+
+//Select neighbor property
+//Toggle stores whether the highlighting is on
+var toggle = 0;
+//Create an array logging what is connected to what
+var linkedByIndex = {};
+for (i = 0; i < nodes_data.length; i++) {
+    linkedByIndex[i + "," + i] = 1;
+};
+links_data.forEach(function (d) {
+    linkedByIndex[d.source.index + "," + d.target.index] = 1;
+});
+//This function looks up whether a pair are neighbours
+function neighboring(a, b) {
+    return linkedByIndex[a.index + "," + b.index];
+}
+function connectedNodes() {
+    if (toggle == 0) {
+        //Reduce the opacity of all but the neighbouring nodes
+        d = d3.select(this).node().__data__;
+        node.style("opacity", function (o) {
+            return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
+        });
+        link.style("opacity", function (o) {
+            return d.index==o.source.index | d.index==o.target.index ? 1 : 0.1;
+        });
+        //Reduce the op
+        toggle = 1;
+    } else {
+        //Put them back to opacity=1
+        node.style("opacity", 1);
+        link.style("opacity", 1);
+        toggle = 0;
+    }
+}
+
+
+//add zoom capabilities 
+var zoom_handler = d3.zoom()
+    .on("zoom", zoom_actions);
+
+zoom_handler(svg);
+    
+svg.on("dblclick.zoom", null)
+
+//add encompassing group for the zoom 
+var g = svg.append("g")
+            .attr("class", "everything");
+
+//draw lines for the links 
+var link = g.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(links_data)
+            .enter().append("line")
+            .attr("stroke-width", 0.5)
+            .style("stroke-opacity", 0.25)
+            .style("stroke", '#a6a6a6');     //linkcolor   
+
+//draw circles for the nodes 
+var node = g.append("g")
+            .attr("class", "nodes") 
+            .selectAll("circle")
+            .data(nodes_data)
+            .enter()
+            .append("circle")
+            .attr("r", nodeSize)
+            .style("stroke", "white")
+            .style("stroke-width", 3)
+            .style("stroke-opacity", 0.5)
+            .style("fill-opacity", 1)
+            .style("fill", circleColour) //circlecolor
+			.on('dblclick', connectedNodes); 
+            
+
+//draw text for the labels
+var text = g.append("g")
+            .attr("class", "labels")
+            .selectAll("text")
+            .data(nodes_data)            
+            .enter()
+            .append("text")
+            .attr("font-size", fontSize) //change fontsize below
+            .text(function(d) {return d.name;})  
+			.attr("text-anchor", "middle")
+			.attr("font-family", "Helvetica")
+            .style("font-weight", 100)
+            .style("pointer-events", "none")
+            .style("fill", "black")
+            .style("stroke", "black")
+            .style("stroke-width", 0.25)
+            .attr('dominant-baseline','middle');
+ 
+ 
+//add drag capabilities  
+var drag_handler = d3.drag()
+    .on("start", drag_start)
+    .on("drag", drag_drag)
+    .on("end", drag_end);   
+    
+drag_handler(node);
+
+
+
+/** Functions **/
+
+//Function to choose what color circle we have
+//Let's return blue for males and red for females
+function circleColour(d){
+    if(d.type =="member"){        //node type
+        return "#fc6435";
+    } else {
+        return "#8aded8";
+    }
+}
+
+//Function to choose the font size
+//If the link type is member, return a size function
+//If the link type is Institution, return another size function 
+
+function fontSize (d){
+    if(d.type == "member"){          //edges type
+        return (d.linkCount < 3) ? d.linkCount * 3 : d.linkCount * 1.5;
+    } else {
+        return d.linkCount ? d.linkCount * 0.2 : 2; //alternatively "(d.linkCount < 5) ? d.linkCount * 3 : d.linkCount * .3"
+    }
+}
+
+//node size depending on the two groups
+function nodeSize (d){
+    if(d.type == "member"){          //edges type
+        return (d.linkCount < 3) ? d.linkCount * 3 : d.linkCount * 1.5;
+    } else {
+        return d.linkCount ? d.linkCount * 0.2 : 5; //alternatively "(d.linkCount < 5) ? d.linkCount * 3 : d.linkCount * .3"
+    }
+}
+
+
+
+
+//Function to choose the line color and thickness
+//If the link type is "A" return green 
+//If the link type is "E" return red 
+
+function linkColour(d){
+    if(d.type == "member"){          //edges type
+        return "#d98686";
+    } else {
+        return "red";
+    }
+}
+
+//Drag functions 
+//d is the node 
+function drag_start(d) {
+ if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+}
+
+//make sure you can't drag the circle outside the box
+function drag_drag(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+function drag_end(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+//Zoom functions 
+function zoom_actions(){
+    g.attr("transform", d3.event.transform)
+}
+
+function tickActions() {
+    //update circle positions each tick of the simulation 
+    node
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+        
+    //update link positions 
+    link
+        .attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    //update text positions
+    text
+        .attr("x", function(d) {return d.x; })
+        .attr("y", function(d) {return d.y; });
+}
+
+
+
+});
+
+
+
+
+
+
+
+
+
+/*
 
 nodes_data = [
 	{
@@ -10521,242 +10805,5 @@ links_data = [
 	}
 ] 
 
-
-
-    /* var nodes_data = [];
-  
-    d3.csv("https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/nfnodes.csv",function(csv){
-                csv.map(function(d){
-                    var obj = {
-                        name: d.name,
-                        type: d.type 
-                    }
-                    nodes_data.push(obj);
-                })
-                //called after the AJAX is success
-                console.log(nodes_data);
-    });
-
-    var links_data = []; 
- 
-    d3.csv("https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/nflink.csv",function(csv){
-                csv.map(function(d){
-                    var obj = {
-                        source: d.source,
-                        target: d.target,
-                        weight: +d.weight
-                    }
-                    links_data.push(obj);
-                })
-                //called after the AJAX is success
-                console.log(links_data);
-    }); */
-
-//Width and height
-var w = 900;
-var h = 600;
-var padding = 20;
-var border=1;
-var bordercolor='black';
-
-//create somewhere to put the force directed graph
-var svg = d3.select("#network")
-            .append("svg")
-            .attr("width", w)
-            .attr("height", h)
-            .attr("border", border);
-
-//border
-var borderPath = svg.append("rect")
-                    .attr("x", 0)
-                    .attr("y", 0)
-                    .attr("height", h)
-                    .attr("width", w)
-                    .style("stroke", bordercolor)
-                    .style("fill", "#f0f0f0")
-                    .style("stroke-width", border);
-    
-var radius = 5; 
-
-
-//set up the simulation and add forces  
-var simulation = d3.forceSimulation()
-                    .nodes(nodes_data);
-                              
-var link_force =  d3.forceLink(links_data)
-                        .id(function(d) { return d.name; });            
-         
-var charge_force = d3.forceManyBody()
-    .strength(-300)
-    .distanceMax(300); 
-    
-var center_force = d3.forceCenter(w / 2, h / 2);  //width "w" and height "h"
-                      
-simulation
-    .force("charge_force", charge_force)
-    .force("center_force", center_force)
-    .force("links",link_force);
-
-        
-//add tick instructions: 
-simulation.on("tick", tickActions );
-
-
-//degree 
-links_data.forEach(function(link){
-
-    if (!link.source["linkCount"]) link.source["linkCount"] = 0; 
-    if (!link.target["linkCount"]) link.target["linkCount"] = 0;
-    
-    link.source["linkCount"]++;
-    link.target["linkCount"]++;
-    
-  });
-
-//add encompassing group for the zoom 
-var g = svg.append("g")
-            .attr("class", "everything");
-
-//draw lines for the links 
-var link = g.append("g")
-            .attr("class", "links")
-            .selectAll("line")
-            .data(links_data)
-            .enter().append("line")
-            .attr("stroke-width", 0.5)
-            .style("stroke-opacity", 0.25)
-            .style("stroke", '#a6a6a6');     //linkcolor   
-
-//draw circles for the nodes 
-var node = g.append("g")
-            .attr("class", "nodes") 
-            .selectAll("circle")
-            .data(nodes_data)
-            .enter()
-            .append("circle")
-            .attr("r", function(d){
-                return (d.linkCount < 5) ? d.linkCount * 2 : d.linkCount * 0.2;
-              })
-            .style("stroke", "white")
-            .style("stroke-width", 3)
-            .style("stroke-opacity", 0.5)
-            .style("fill-opacity", 1)
-            .style("fill", circleColour); //circlecolor
-            
-
-//draw text for the labels
-var text = g.append("g")
-            .attr("class", "labels")
-            .selectAll("text")
-            .data(nodes_data)            
-            .enter()
-            .append("text")
-            .attr("font-size", fontSize) //change fontsize below
-            .text(function(d) {return d.name;})  
-			.attr("text-anchor", "middle")
-			.attr("font-family", "Helvetica")
-            .style("font-weight", 100)
-            .style("pointer-events", "none")
-            .style("fill", "black")
-            .style("stroke", "black")
-            .style("stroke-width", 0.25)
-            .attr('dominant-baseline','middle');
- 
- 
-//add drag capabilities  
-var drag_handler = d3.drag()
-    .on("start", drag_start)
-    .on("drag", drag_drag)
-    .on("end", drag_end);   
-    
-drag_handler(node);
-
-
-//add zoom capabilities 
-var zoom_handler = d3.zoom()
-    .on("zoom", zoom_actions);
-
-zoom_handler(svg);     
-
-/** Functions **/
-
-//Function to choose what color circle we have
-//Let's return blue for males and red for females
-function circleColour(d){
-    if(d.type =="member"){        //node type
-        return "#fc6435";
-    } else {
-        return "#8aded8";
-    }
-}
-
-//Function to choose the font size
-//If the link type is member, return a size function
-//If the link type is Institution, return another size function 
-
-
-function fontSize (d){
-    if(d.type == "member"){          //edges type
-        return (d.linkCount < 4) ? d.linkCount * 4 : d.linkCount * 2;
-    } else {
-        return d.linkCount ? d.linkCount * 0.2 : 2; //alternatively "(d.linkCount < 5) ? d.linkCount * 3 : d.linkCount * .3"
-    }
-}
-
-
-//Function to choose the line color and thickness
-//If the link type is "A" return green 
-//If the link type is "E" return red 
-
-function linkColour(d){
-    if(d.type == "member"){          //edges type
-        return "#d98686";
-    } else {
-        return "red";
-    }
-}
-
-//Drag functions 
-//d is the node 
-function drag_start(d) {
- if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-    d.fx = d.x;
-    d.fy = d.y;
-}
-
-//make sure you can't drag the circle outside the box
-function drag_drag(d) {
-  d.fx = d3.event.x;
-  d.fy = d3.event.y;
-}
-
-function drag_end(d) {
-  if (!d3.event.active) simulation.alphaTarget(0);
-  d.fx = null;
-  d.fy = null;
-}
-
-//Zoom functions 
-function zoom_actions(){
-    g.attr("transform", d3.event.transform)
-}
-
-function tickActions() {
-    //update circle positions each tick of the simulation 
-       node
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
-        
-    //update link positions 
-    link
-        .attr("x1", function(d) { return d.source.x; })
-        .attr("y1", function(d) { return d.source.y; })
-        .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });
-
-    //update text positions
-    text
-        .attr("x", function(d) {return d.x; })
-        .attr("y", function(d) {return d.y; });
-}
+ */
 

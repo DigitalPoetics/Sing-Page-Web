@@ -39,7 +39,7 @@
     <script Src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.0/papaparse.min.js"></script>
 	
 
-	
+
   </head>
   <body>
 
@@ -53,9 +53,7 @@
 
 	<div id="wave-timeline"></div>    
 
-	<div id="waveform">
-		<track src="WCWsomuch.vtt" kind="captions" srclang="en" label="English">
-	</div>
+	<div id="waveform"></div>
 
 	<div id="y-axis"></div>
 
@@ -90,7 +88,7 @@
 
 </div>
 
-	<div id="annotations"></div>
+	<div id="annotations" class="table-responsive"></div>
 
 
 
@@ -137,7 +135,7 @@
 		wavesurfer.drawer.canvases[0].wave.style.zIndex = 2;
 	}); */
 	
-	wavesurfer.on('ready', function () {
+/*	wavesurfer.on('ready', function () {
 		var elan = Object.create(WaveSurfer.Elan);
 		elan.init({
 			wavesurfer: wavesurfer,
@@ -149,38 +147,18 @@
 			}			
 		});
 	});
-	
+	*/
+
 	wavesurfer.load('https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/WCWsomuch.mp3');
 
 	var slider = document.querySelector('#slider');
 
 	slider.oninput = function () {
   		var zoomLevel = Number(slider.value);
-  		wavesurfer.zoom(zoomLevel); 
+  		wavesurfer.zoom(zoomLevel);
 	};
 
 	</script>
-
-	<script>
-		$.get('WCWsomuch.vtt', function(data) {
-     
-     // Read all captions into an array
-     var items = data.split('\n\r\n');
-     
-     console.log(items);
-    
-     //Loop through all captions
-     $.each(items, function( index, value ) {
-      
-      var item = items[index].split('\n');
-      console.log(item);    
-
-      });
- });
-	</script>
-
-
-
 
 
 
