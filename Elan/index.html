@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../style.css">
 
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- main wavesurfer.js lib -->
     <script src="https://unpkg.com/wavesurfer.js"></script>
     <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.regions.js"></script>
@@ -38,7 +41,7 @@
             backend: 'MediaElement',
             plugins: [
             WaveSurfer.elan.create({
-                url: 'WCWsomuch.xml',
+                url: 'https://wavesurfer-js.org/example/elan/transcripts/001z.xml',
                 container: '#annotations',
                 tiers: {
                 Text: true,
@@ -56,36 +59,44 @@
         wavesurfer.backend.play(start, end);
         });
 
+        wavesurfer.elan.on('ready', function() {
+            let classList = wavesurfer.elan.container.querySelector('table')
+                .classList;
+            ['table', 'table-striped', 'table-hover'].forEach(function(cl) {
+                classList.add(cl);
+            });
+        });
+
         let prevAnnotation, prevRow, region;
         let onProgress = function(time) {
-        let annotation = wavesurfer.elan.getRenderedAnnotation(time);
+            let annotation = wavesurfer.elan.getRenderedAnnotation(time);
 
-        if (prevAnnotation != annotation) {
-            prevAnnotation = annotation;
+            if (prevAnnotation != annotation) {
+                prevAnnotation = annotation;
 
-            region && region.remove();
-            region = null;
+                region && region.remove();
+                region = null;
 
-            if (annotation) {
-            // Highlight annotation table row
-            let row = wavesurfer.elan.getAnnotationNode(annotation);
-            prevRow && prevRow.classList.remove('success');
-            prevRow = row;
-            row.classList.add('success');
-            let before = row.previousSibling;
-            if (before) {
-                wavesurfer.elan.container.scrollTop = before.offsetTop;
+                if (annotation) {
+                    // Highlight annotation table row
+                    let row = wavesurfer.elan.getAnnotationNode(annotation);
+                    prevRow && prevRow.classList.remove('success');
+                    prevRow = row;
+                    row.classList.add('success');
+                    let before = row.previousSibling;
+                    if (before) {
+                        wavesurfer.elan.container.scrollTop = before.offsetTop;
+                    }
+
+                    // Region
+                    region = wavesurfer.addRegion({
+                        start: annotation.start,
+                        end: annotation.end,
+                        resize: false,
+                        color: 'rgba(223, 240, 216, 0.7)'
+                    });
+                }
             }
-
-            // Region
-            region = wavesurfer.addRegion({
-                start: annotation.start,
-                end: annotation.end,
-                resize: false,
-                color: 'rgba(223, 240, 216, 0.7)'
-            });
-            }
-        }
         };
 
         wavesurfer.on('audioprocess', onProgress);

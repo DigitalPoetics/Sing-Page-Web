@@ -6,7 +6,7 @@
 }
 
 .wavesurfer-annotations tr.wavesurfer-active td {
-    background-color: yellow;
+    background-color: green;
 }
 
 .wavesurfer-time {
@@ -16,6 +16,7 @@
 
 .wavesurfer-tier-Text {
     width: 500px;
+    color: black;
 }
 
 td.wavesurfer-tier-Comments {
@@ -25,6 +26,7 @@ td.wavesurfer-tier-Comments {
 .wavesurfer-handle {
     background-color: #c9e2b3;
 }
+
 
 
 
