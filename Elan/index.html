@@ -38,7 +38,7 @@
             backend: 'MediaElement',
             plugins: [
             WaveSurfer.elan.create({
-                url: 'https://wavesurfer-js.org/example/elan/transcripts/001z.xml',
+                url: '001z.xml',
                 container: '#annotations',
                 tiers: {
                 Text: true,
@@ -50,7 +50,7 @@
         });
 
 
-        wavesurfer.load('https://wavesurfer-js.org/example/elan/transcripts/001z.mp3');
+        wavesurfer.load('https://raw.githubusercontent.com/diagrammaticreadings/Sing-Page-Web/main/creeley.mp3');
 
         wavesurfer.elan.on('select', function(start, end) {
         wavesurfer.backend.play(start, end);
