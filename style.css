@@ -3,7 +3,6 @@
 #annotations {
     max-height: 300px;
     overflow: auto;
-    display: block;
 }
 
 .wavesurfer-annotations tr.wavesurfer-active td {
@@ -35,6 +34,7 @@ td.wavesurfer-tier-Comments {
   margin-left: 20px;
   padding-top: 10px;
 }
+
 
 
 /**** pitch ****/

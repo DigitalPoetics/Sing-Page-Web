@@ -10,7 +10,7 @@ d3.queue()
 
 //Width and height
 var w = 900;
-var h = 600;
+var h = 650;
 var padding = 20;
 var border=1;
 var bordercolor='black';
@@ -184,7 +184,7 @@ drag_handler(node);
 //Let's return blue for males and red for females
 function circleColour(d){
     if(d.type =="member"){        //node type
-        return "#fc6435";
+        return "#ff8c69";
     } else {
         return "#8aded8";
     }
