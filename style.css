@@ -34,8 +34,14 @@ td.wavesurfer-tier-Comments {
     display: none;
 }
 
+
 .wavesurfer-handle {
     background-color: #c9e2b3;
+}
+
+.table {
+    background-color: white;
+    border-collapse: collapse;
 }
 
 

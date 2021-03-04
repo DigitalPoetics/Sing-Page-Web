@@ -41,7 +41,7 @@
             backend: 'MediaElement',
             plugins: [
             WaveSurfer.elan.create({
-                url: '001z.xml',
+                url: 'WCWsomuch1.xml',
                 container: '#annotations',
                 tiers: {
                 Text: true,
@@ -62,7 +62,7 @@
         wavesurfer.elan.on('ready', function() {
             let classList = wavesurfer.elan.container.querySelector('table')
                 .classList;
-            ['table', 'table-hover'].forEach(function(cl) {
+            ['table', 'table-hover'].forEach(function(cl) {    
                 classList.add(cl);
             });
         });
